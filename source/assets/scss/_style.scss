@@ -1,0 +1,135 @@
+// screen sizes
+$lg: 1000px;
+$md: 768px;
+$sm: 480px;
+
+// colors
+$color_base: #416f8e;
+$color_accent: #f74040;
+$color_link: #416f8e;
+$color_header: #ddd;
+$color_footer: #333;
+$color_title: #333;
+$color_text: #333;
+$color_text_light: #ddd;
+
+// sns colors
+$color_facebook: #3b5998;
+$color_twitter: #1da1f2;
+$color_instagram: #003569;
+$color_line: #00c300;
+$color_googleplus: #dd4b39;
+$color_youtube: #cd201f;
+$color_vimeo: #1ab7ea;
+$color_copy: #333;
+// service colors
+$color_google: #4285f4;
+$color_yahoo: #410093;
+$color_dropbox: #007ee5;
+$color_skype: #00aff0;
+$color_rss: #f26522;
+$color_wordpress: #21759b;
+
+
+// font
+$font-family_base: "Noto Sans Japanese",sans-serif;
+@mixin font($size) {
+    font: 400 $size + px/160% $font-family_base;
+    font: 400 ($size / 10)+rem/160% $font-family_base;
+}
+
+// hover action
+@mixin hover {
+    transition: all .2s ease;
+    &:hover {
+        opacity: 0.70;
+    }
+}
+
+@mixin hover_filter_light {
+    display: block;
+    position: relative;
+    transition: all .2s ease;
+    &:hover:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        content: "";
+        background-color: rgba(255,255,255,.5);
+    }
+}
+
+@mixin hover_filter_dark {
+    display: block;
+    position: relative;
+    transition: all .2s ease;
+    &:hover:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        content: "";
+        background-color: rgba(0,0,0,.5);
+    }
+}
+
+// text underline
+@mixin underline {
+    text-decoration: underline;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+
+// media query
+@mixin max-lg {
+    @media screen and (max-width: $lg - 1) {
+        @content;
+    }
+}
+
+@mixin max-md {
+    @media screen and (max-width: $md - 1) {
+        @content;
+    }
+}
+
+@mixin max-sm {
+    @media screen and (max-width: $sm - 1) {
+        @content;
+    }
+}
+
+@mixin min-lg {
+    @media screen and (min-width: $lg) {
+        @content;
+    }
+}
+
+@mixin min-md {
+    @media screen and (min-width: $md) {
+        @content;
+    }
+}
+
+@mixin min-sm {
+    @media screen and (min-width: $sm) {
+        @content;
+    }
+}
+
+@mixin sm-md {
+    @media screen and (min-width: $sm) and (max-width: $md -1) {
+        @content;
+    }
+}
+
+@mixin md-lg {
+    @media screen and (min-width: $md) and (max-width: $lg -1) {
+        @content;
+    }
+}

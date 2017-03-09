@@ -1,0 +1,397 @@
+@import "_layout";
+@import "_style";
+
+.mainvisual {
+    width: 100%;
+    position: relative;
+    .bxslider {
+        .slide {
+            position: relative;
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            &:before {
+                content: "";
+                display: block;
+                padding-top: 46%;
+            }
+        }
+    }
+    p {
+        @include font(29);
+        line-height: 1.8;
+        letter-spacing: 4px;
+        white-space: nowrap;
+        font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+        writing-mode: vertical-rl;
+        -ms-writing-mode: tb-rl;
+        -webkit-writing-mode: vertical-rl;
+        position: absolute;
+        margin: 0;
+        top: -110px;
+        right: 5%;
+        @media screen and (max-width: $md - 1) {
+            @include font(24);
+            font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+            top: -95px;
+            right: 3%;
+        }
+        @media screen and (max-width: $sm - 1) {
+            @include font(18);
+            font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+            top: -70px;
+            right: 2%;
+        }
+    }
+}
+
+.introduction {
+    text-align: center;
+    h2 {
+        margin-top: 25px;
+        @include font(23);
+        font-family: "Sawarabi Mincho";
+        color: #416f8e;
+        letter-spacing: 2px;
+        @media screen and (max-width: $md - 1) {
+            span {
+                display: block;
+                @include font(18);
+                font-family: "Sawarabi Mincho";
+            }
+        }
+    }
+    .sub-ttl {
+        max-width: 700px;
+        margin: auto;
+        @media screen and (max-width: $md - 1) {
+            max-width: 600px;
+        }
+    }
+    p {
+        margin: 15px 0;
+        @include font(20);
+        font-family: "Sawarabi Mincho";
+        color: #416f8e;
+        letter-spacing: 2px;
+        line-height: 2;
+        @media screen and (max-width: $md - 1) {
+            @include font(17);
+            font-family: "Sawarabi Mincho";
+            line-height: 1.8;
+        }
+        @media screen and (max-width: $sm - 1) {
+            br {
+                display: none;
+            }
+        }
+    }
+    .more {
+        a {
+            position: relative;
+            display: inline-block;
+            @include font(20);
+            letter-spacing: 3px;
+            margin: 15px auto 50px;
+            padding: 10px 55px 10px 35px;
+            color: #416f8e;
+            font-weight: 200;
+            text-decoration: none;
+            border: solid 1px #416f8e;
+            // &:after {
+            //     position: absolute;
+            //     content: "";
+            //     background-image: url(/assets/img/index/arrow_bule.png);
+            //     background-repeat: no-repeat;
+            //     background-position: center center;
+            //     background-size: cover;
+            //     width: 22px;
+            //     height: 22px;
+            //     top: 50%;
+            //     right: 20px;
+            //     margin-top: -11px;
+            // }
+            &:before{
+                content: "";
+                width: 12px;
+                height: 12px;
+                border: 0px;
+                border-top: solid 1px #416f8e;
+                border-right: solid 1px #416f8e;
+                -ms-transform: rotate(45deg);
+                -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+                position: absolute;
+                top: 50%;
+                right: 30px;
+                margin-top: -6px;
+            }
+            &:hover {
+                opacity: 1;
+                color: #fff;
+                background-color: #416f8e;
+                &:before {
+                    border-top: solid 1px #fff;
+                    border-right: solid 1px #fff;
+                }
+            }
+        }
+    }
+}
+
+.btn-wrap {
+    .purchase {
+        width: 100%;
+        text-align: center;
+        a {
+            display: block;
+            color: #fff;
+            background-color: #4d4d4d;
+            text-decoration: none;
+            @include font(24);
+            letter-spacing: 3px;
+            font-weight: 200;
+            padding: 15px 0;
+            @media screen and (max-width: $md - 1) {
+                @include font(21);
+                font-weight: 200;
+                padding: 12px 0;
+            }
+            @media screen and (max-width: $sm - 1) {
+                @include font(18);
+                font-weight: 200;
+                padding: 12px 0;
+            }
+        }
+    }
+    .choice {
+        font-size: 0;
+        text-align: center;
+        .area {
+            width: 50%;
+            display: inline-block;
+            cursor: pointer;
+            @include hover;
+            p {
+                display: block;
+                color: #fff;
+                background-color: #daa198;
+                text-decoration: none;
+                @include font(24);
+                letter-spacing: 3px;
+                font-weight: 200;
+                margin: 0;
+                padding: 15px 0;
+                @media screen and (max-width: $md - 1) {
+                    @include font(21);
+                    font-weight: 200;
+                    padding: 12px 0;
+                }
+                @media screen and (max-width: $sm - 1) {
+                    @include font(18);
+                    font-weight: 200;
+                    padding: 12px 0;
+                    letter-spacing: 1px;
+                }
+                span {
+                    margin-left: -25px;
+                    position: relative;
+                    @media screen and (max-width: $sm - 1) {
+                        margin-left: -20px;
+                    }
+                    &:after {
+                        content: "";
+                        width: 12px;
+                        height: 12px;
+                        border: 0px;
+                        border-top: solid 1px #fff;
+                        border-right: solid 1px #fff;
+                        -ms-transform: rotate(135deg);
+                        -webkit-transform: rotate(135deg);
+                        transform: rotate(135deg);
+                        transition: all .2s ease;
+                        position: absolute;
+                        top: 50%;
+                        right: -25px;
+                        margin-top: -7px;
+                        @media screen and (max-width: $sm - 1) {
+                            width: 9px;
+                            height: 9px;
+                            right: -20px;
+                            margin-top: -6px;
+                        }
+                    }
+                }
+            }
+            &.active {
+                p {
+                    span {
+                        &:after {
+                            -ms-transform: rotate(-45deg);
+                            -webkit-transform: rotate(-45deg);
+                            transform: rotate(-45deg);
+                            transition: all .2s ease;
+                            margin-top: -3px;
+                            @media screen and (max-width: $sm - 1) {
+                                margin-top: -1px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .genre {
+            width: 50%;
+            display: inline-block;
+            cursor: pointer;
+            @include hover;
+            p {
+                display: block;
+                color: #fff;
+                background-color: #84b7a3;
+                text-decoration: none;
+                @include font(24);
+                letter-spacing: 3px;
+                font-weight: 200;
+                margin: 0;
+                padding: 15px 0;
+                @media screen and (max-width: $md - 1) {
+                    @include font(21);
+                    font-weight: 200;
+                    padding: 12px 0;
+                }
+                @media screen and (max-width: $sm - 1) {
+                    @include font(18);
+                    font-weight: 200;
+                    padding: 12px 0;
+                    letter-spacing: 1px;
+                }
+                span {
+                    margin-left: -25px;
+                    position: relative;
+                    @media screen and (max-width: $sm - 1) {
+                        margin-left: -20px;
+                    }
+                    &:after {
+                        content: "";
+                        width: 11px;
+                        height: 11px;
+                        border: 0px;
+                        border-top: solid 1px #fff;
+                        border-right: solid 1px #fff;
+                        -ms-transform: rotate(135deg);
+                        -webkit-transform: rotate(135deg);
+                        transform: rotate(135deg);
+                        position: absolute;
+                        top: 50%;
+                        right: -25px;
+                        margin-top: -7px;
+                        @media screen and (max-width: $sm - 1) {
+                            width: 9px;
+                            height: 9px;
+                            right: -20px;
+                            margin-top: -6px;
+                        }
+                    }
+                }
+            }
+            &.active {
+                p {
+                    span {
+                        &:after {
+                            -ms-transform: rotate(-45deg);
+                            -webkit-transform: rotate(-45deg);
+                            transform: rotate(-45deg);
+                            transition: all .2s ease;
+                            margin-top: -3px;
+                            @media screen and (max-width: $sm - 1) {
+                                margin-top: -1px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .area-accordion {
+        display: none;
+        width: 50%;
+        float: left;
+        @media screen and (max-width: $sm - 1) {
+            width: 100%;
+            max-width: 100%;
+            float: none;
+        }
+        ul {
+            list-style: none;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            font-size: 0;
+            li {
+                display: inline-block;
+                @include font(14);
+                width: 25%;
+                position: relative;
+                &:after {
+                    position: absolute;
+                    content: "";
+                    width: 2px;
+                    height: 100%;
+                    background-color: #fff;
+                    top: 0px;
+                    right: -1px;
+                    z-index: 100;
+                }
+                @media screen and (max-width: $sm - 1) {
+                    &:last-child {
+                        &:after {
+                            content: none;
+                        }
+                    }
+                }
+                a {
+                    display: block;
+                }
+            }
+        }
+    }
+    .genre-accordion {
+        display: none;
+        width: 50%;
+        float: right;
+        @media screen and (max-width: $sm - 1) {
+            width: 100%;
+            max-width: 100%;
+            float: none;
+        }
+        ul {
+            list-style: none;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            font-size: 0;
+            li {
+                display: inline-block;
+                @include font(14);
+                width: 25%;
+                position: relative;
+                &:not(:last-child) {
+                    &:after {
+                        position: absolute;
+                        content: "";
+                        width: 2px;
+                        height: 100%;
+                        background-color: #fff;
+                        top: 0px;
+                        right: -1px;
+                        z-index: 100;
+                    }
+                }
+                a {
+                    display: block;
+                }
+            }
+        }
+    }
+}

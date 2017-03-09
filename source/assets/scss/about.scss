@@ -1,0 +1,77 @@
+@import "_layout";
+@import "_style";
+
+.mainvisual {
+    img {
+        width: 100%;
+    }
+}
+
+.overview {
+    text-align: center;
+    h2 {
+        margin: 25px 0 10px;
+        padding-bottom: 3px;
+        @include font(20);
+        letter-spacing: 3px;
+        color: #40708d;
+        border-bottom: solid 1px #40708d;
+        display: inline-block;
+    }
+    p {
+        margin: 5px 0;
+        @include font(14);
+        text-align: left;
+        line-height: 1.8;
+        letter-spacing: 1px;
+    }
+}
+
+.map {
+    text-align: center;
+    margin: 30px 0;
+    img {
+        max-width: 600px;
+    }
+}
+
+.point {
+    margin: 20px 0 10px;
+    .item {
+        margin-bottom: 20px;
+        padding-bottom: 15px;
+        &:not(:last-child) {
+            border-bottom: solid 1px #b8cad5;
+        }
+        .inner {
+            padding: 0 20px;
+            display: table;
+            .number {
+                display: table-cell;
+                @include font(38);
+                font-family: Palatino;
+                line-height: 1;
+                i {
+                    color: #40708d;
+                }
+            }
+            .text {
+                display: table-cell;
+                vertical-align: top;
+                padding-left: 1em;
+                h3 {
+                    margin: 0 0 5px;
+                    @include font(21);
+                    letter-spacing: 2px;
+                    color: #40708d;
+                }
+                p {
+                    margin: 0;
+                    @include font(15);
+                    letter-spacing: 1px;
+                    color: #40708d;
+                }
+            }
+        }
+    }
+}

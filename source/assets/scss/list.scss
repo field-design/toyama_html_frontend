@@ -1,0 +1,26 @@
+@import "_layout";
+@import "_style";
+
+h2 {
+    text-align: center;
+    @include font(20);
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    span {
+        border-bottom: solid 1px #000;
+        padding: 0 5px 5px;
+    }
+}
+
+.tour {
+    .tours {
+        &:nth-child(1),&:nth-child(2) {
+            border-top: solid 1px #e3e2e2;
+        }
+        @media screen and (max-width: $lg - 1) {
+            &:nth-child(2) {
+                border-top: none;
+            }
+        }
+    }
+}
