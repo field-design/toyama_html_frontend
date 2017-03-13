@@ -1068,6 +1068,28 @@ img {
   margin: 10px 0;
 }
 
+@media screen and (min-width: 480px) {
+  .overview .details .accordion p {
+    text-align: center;
+    max-width: 675px;
+    margin: auto;
+  }
+}
+
+.overview .details .detail {
+  padding: 0 0 30px;
+}
+
+.overview .details .detail .more {
+  margin: 1em;
+}
+
+.overview .details .detail .more a {
+  color: #40708d;
+  font: 400 14px/160% "Noto Sans Japanese", sans-serif;
+  font: 400 1.4rem/160% "Noto Sans Japanese", sans-serif;
+}
+
 .overview .information table {
   width: 100%;
   border-collapse: collapse;
