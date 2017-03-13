@@ -7,7 +7,7 @@
 		"uuidString": "775E72FC-D854-47F9-AB3E-BF115A08D80D"
 		}
 	],
-"creatorBuild": "25568",
+"creatorBuild": "25704",
 "files": {
 	"\/build": {
 		"ft": 65536,
@@ -116,10 +116,12 @@
 	"\/source\/assets\/img\/about\/main_img.png": {
 		"ft": 32768,
 		"iS": 1142743,
+		"l": 1,
 		"oA": 0,
 		"oAP": "\/build\/assets\/img\/about\/main_img.png",
 		"oF": 0,
-		"opt": 1
+		"opt": 1,
+		"q": 100
 		},
 	"\/source\/assets\/img\/about\/map.svg": {
 		"ft": 2097152,
@@ -154,42 +156,52 @@
 	"\/source\/assets\/img\/common\/nav_right_arrow01.png": {
 		"ft": 32768,
 		"iS": 1356,
+		"l": 1,
 		"oA": 0,
 		"oAP": "\/build\/assets\/img\/common\/nav_right_arrow01.png",
 		"oF": 0,
-		"opt": 1
+		"opt": 1,
+		"q": 100
 		},
 	"\/source\/assets\/img\/common\/nav_right_arrow02.png": {
 		"ft": 32768,
 		"iS": 1332,
+		"l": 1,
 		"oA": 0,
 		"oAP": "\/build\/assets\/img\/common\/nav_right_arrow02.png",
 		"oF": 0,
-		"opt": 1
+		"opt": 1,
+		"q": 100
 		},
 	"\/source\/assets\/img\/index\/arrow_ white.png": {
 		"ft": 32768,
 		"iS": 1315,
+		"l": 1,
 		"oA": 0,
 		"oAP": "\/build\/assets\/img\/index\/arrow_ white.png",
 		"oF": 0,
-		"opt": 1
+		"opt": 1,
+		"q": 100
 		},
 	"\/source\/assets\/img\/index\/arrow_black.png": {
 		"ft": 32768,
 		"iS": 1346,
+		"l": 1,
 		"oA": 0,
 		"oAP": "\/build\/assets\/img\/index\/arrow_black.png",
 		"oF": 0,
-		"opt": 1
+		"opt": 1,
+		"q": 100
 		},
 	"\/source\/assets\/img\/index\/arrow_bule.png": {
 		"ft": 32768,
 		"iS": 1406,
+		"l": 1,
 		"oA": 0,
 		"oAP": "\/build\/assets\/img\/index\/arrow_bule.png",
 		"oF": 0,
-		"opt": 1
+		"opt": 1,
+		"q": 100
 		},
 	"\/source\/assets\/img\/index\/icon_asahi.svg": {
 		"ft": 2097152,
@@ -287,7 +299,8 @@
 		"oA": 0,
 		"oAP": "\/build\/assets\/img\/index\/slide01.jpg",
 		"oF": 0,
-		"opt": 1
+		"opt": 1,
+		"q": 100
 		},
 	"\/source\/assets\/img\/index\/sub_ttl.svg": {
 		"ft": 2097152,
@@ -305,7 +318,8 @@
 		"oA": 0,
 		"oAP": "\/build\/assets\/img\/index\/tour_img01.jpg",
 		"oF": 0,
-		"opt": 1
+		"opt": 1,
+		"q": 100
 		},
 	"\/source\/assets\/img\/index\/tour_img02.jpg": {
 		"ft": 16384,
@@ -313,7 +327,8 @@
 		"oA": 0,
 		"oAP": "\/build\/assets\/img\/index\/tour_img02.jpg",
 		"oF": 0,
-		"opt": 1
+		"opt": 1,
+		"q": 100
 		},
 	"\/source\/assets\/img\/index\/tour_img03.jpg": {
 		"ft": 16384,
@@ -321,7 +336,58 @@
 		"oA": 0,
 		"oAP": "\/build\/assets\/img\/index\/tour_img03.jpg",
 		"oF": 0,
-		"opt": 1
+		"opt": 1,
+		"q": 100
+		},
+	"\/source\/assets\/img\/post\/icon_ask.png": {
+		"ft": 32768,
+		"iS": 476,
+		"l": 1,
+		"oA": 0,
+		"oAP": "\/build\/assets\/img\/post\/icon_ask.png",
+		"oF": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/source\/assets\/img\/post\/icon_few.png": {
+		"ft": 32768,
+		"iS": 470,
+		"l": 1,
+		"oA": 0,
+		"oAP": "\/build\/assets\/img\/post\/icon_few.png",
+		"oF": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/source\/assets\/img\/post\/icon_many.png": {
+		"ft": 32768,
+		"iS": 573,
+		"l": 1,
+		"oA": 0,
+		"oAP": "\/build\/assets\/img\/post\/icon_many.png",
+		"oF": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/source\/assets\/img\/post\/icon_not.png": {
+		"ft": 32768,
+		"iS": 338,
+		"l": 1,
+		"oA": 0,
+		"oAP": "\/build\/assets\/img\/post\/icon_not.png",
+		"oF": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/source\/assets\/img\/post\/icon_out.png": {
+		"ft": 32768,
+		"iS": 91,
+		"l": 1,
+		"oA": 0,
+		"oAP": "\/build\/assets\/img\/post\/icon_out.png",
+		"oF": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"\/source\/assets\/img\/post\/now.svg": {
 		"ft": 2097152,
@@ -339,7 +405,8 @@
 		"oA": 0,
 		"oAP": "\/build\/assets\/img\/post\/slide.jpg",
 		"oF": 0,
-		"opt": 1
+		"opt": 1,
+		"q": 100
 		},
 	"\/source\/assets\/img\/post\/test.jpg": {
 		"ft": 16384,
@@ -347,7 +414,8 @@
 		"oA": 0,
 		"oAP": "\/build\/assets\/img\/post\/test.jpg",
 		"oF": 0,
-		"opt": 1
+		"opt": 1,
+		"q": 100
 		},
 	"\/source\/assets\/js\/common.js": {
 		"ft": 64,
@@ -617,12 +685,6 @@
 		"oAP": "\/build\/kit\/_share.html",
 		"oF": 0
 		},
-	"\/source\/list\/index.kit": {
-		"ft": 2048,
-		"oA": 0,
-		"oAP": "\/build\/list\/index.html",
-		"oF": 0
-		},
 	"\/source\/niikawa\/about\/index.kit": {
 		"ft": 2048,
 		"oA": 0,
@@ -635,10 +697,16 @@
 		"oAP": "\/build\/niikawa\/index.html",
 		"oF": 0
 		},
-	"\/source\/post\/index.kit": {
+	"\/source\/niikawa\/list\/index.kit": {
 		"ft": 2048,
 		"oA": 0,
-		"oAP": "\/build\/post\/index.html",
+		"oAP": "\/build\/niikawa\/list\/index.html",
+		"oF": 0
+		},
+	"\/source\/niikawa\/plan\/index.kit": {
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/build\/niikawa\/plan\/index.html",
 		"oF": 0
 		}
 	},
@@ -1323,6 +1391,10 @@
 			"active": 1,
 			"optionString": ""
 			},
+		"no-compare-neg-zero": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-cond-assign": {
 			"active": 1,
 			"optionString": "'except-parens'"
@@ -1802,6 +1874,10 @@
 		"no-with": {
 			"active": 0,
 			"optionString": ""
+			},
+		"nonblock-statement-body-position": {
+			"active": 0,
+			"optionString": "'beside'"
 			},
 		"object-curly-newline": {
 			"active": 0,
@@ -2402,7 +2478,8 @@
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
-		"autoOutputPathStyle": 0
+		"autoOutputPathStyle": 0,
+		"quality": 100
 		},
 	"languageDefaultsJS": {
 		"autoOutputAction": 0,
@@ -2495,7 +2572,9 @@
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
-		"autoOutputPathStyle": 0
+		"autoOutputPathStyle": 0,
+		"enableLossy": 1,
+		"quality": 100
 		},
 	"languageDefaultsPUG": {
 		"autoOutputAction": 0,
