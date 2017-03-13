@@ -1301,6 +1301,180 @@ img {
   left: 0;
 }
 
+.order-table-section {
+  margin: 20px 0 0;
+}
+
+.order-table-section .month-pager {
+  padding: 5px;
+  max-width: 675px;
+  margin: auto;
+  background-color: #ededed;
+  box-sizing: border-box;
+  font: 400 16px/160% "Noto Sans Japanese", sans-serif;
+  font: 400 1.6rem/160% "Noto Sans Japanese", sans-serif;
+}
+
+.order-table-section .month-pager .wrap {
+  display: table;
+  width: 100%;
+}
+
+.order-table-section .month-pager .button {
+  display: table-cell;
+}
+
+.order-table-section .month-pager .prev {
+  text-align: left;
+}
+
+.order-table-section .month-pager .current {
+  font: 400 20px/160% "Noto Sans Japanese", sans-serif;
+  font: 400 2rem/160% "Noto Sans Japanese", sans-serif;
+}
+
+.order-table-section .month-pager .next {
+  text-align: right;
+}
+
+.order-table-section .order-table {
+  width: 100%;
+  max-width: 675px;
+  margin: auto;
+  border-collapse: collapse;
+  box-sizing: border-box;
+}
+
+.order-table-section .order-table thead {
+  background-color: #ededed;
+}
+
+.order-table-section .order-table th,
+.order-table-section .order-table td {
+  padding: 5px 0;
+  font: 400 16px/160% "Noto Sans Japanese", sans-serif;
+  font: 400 1.6rem/160% "Noto Sans Japanese", sans-serif;
+  border: 1px solid #ddd;
+}
+
+.order-table-section .order-table th .order-status,
+.order-table-section .order-table td .order-status {
+  padding: 5px 0;
+}
+
+.order-table-section .order-table th .order-status div,
+.order-table-section .order-table td .order-status div {
+  display: block;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center center;
+  width: 100%;
+  max-width: 20px;
+  margin: auto;
+}
+
+.order-table-section .order-table th .order-status div:before,
+.order-table-section .order-table td .order-status div:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+
+.order-table-section .order-table th .order-status .many,
+.order-table-section .order-table td .order-status .many {
+  background-image: url(../img/post/icon_many.png);
+}
+
+.order-table-section .order-table th .order-status .few,
+.order-table-section .order-table td .order-status .few {
+  background-image: url(../img/post/icon_few.png);
+}
+
+.order-table-section .order-table th .order-status .not,
+.order-table-section .order-table td .order-status .not {
+  background-image: url(../img/post/icon_not.png);
+}
+
+.order-table-section .order-table th .order-status .out,
+.order-table-section .order-table td .order-status .out {
+  background-image: url(../img/post/icon_out.png);
+}
+
+.order-table-section .order-table th .order-status .ask,
+.order-table-section .order-table td .order-status .ask {
+  background-image: url(../img/post/icon_ask.png);
+}
+
+.order-table-section .order-table th .order-status img,
+.order-table-section .order-table td .order-status img {
+  max-width: 16px;
+  height: auto;
+}
+
+.order-table-section .order-table .sat {
+  color: #509ece;
+}
+
+.order-table-section .order-table .sun {
+  color: #ec5a24;
+}
+
+.order-table-section .notes {
+  width: 100%;
+  max-width: 675px;
+  margin: auto;
+  padding: 5px 0;
+}
+
+.order-table-section .notes li {
+  margin: 2px 5px;
+  list-style: none;
+  display: inline-block;
+}
+
+.order-table-section .notes li p {
+  margin: 0;
+  padding-left: 1.25em;
+  position: relative;
+  font: 400 16px/160% "Noto Sans Japanese", sans-serif;
+  font: 400 1.6rem/160% "Noto Sans Japanese", sans-serif;
+  color: #999;
+  text-align: left;
+}
+
+.order-table-section .notes li p:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 1em;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center center;
+}
+
+.order-table-section .notes li .many:before {
+  background-image: url(../img/post/icon_many.png);
+}
+
+.order-table-section .notes li .few:before {
+  background-image: url(../img/post/icon_few.png);
+}
+
+.order-table-section .notes li .not:before {
+  background-image: url(../img/post/icon_not.png);
+}
+
+.order-table-section .notes li .out:before {
+  background-image: url(../img/post/icon_out.png);
+}
+
+.order-table-section .notes li .ask:before {
+  background-image: url(../img/post/icon_ask.png);
+}
+
 .btn-entry {
   position: fixed;
   width: 100%;

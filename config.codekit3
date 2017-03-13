@@ -15,6 +15,24 @@
 		"oAP": "\/build\/build",
 		"oF": 0
 		},
+	"\/README.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/build\/README.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
 	"\/source\/assets\/css\/icomoon.css": {
 		"aP": 1,
 		"bl": 0,
@@ -611,6 +629,12 @@
 		"ft": 2048,
 		"oA": 0,
 		"oAP": "\/build\/index.html",
+		"oF": 0
+		},
+	"\/source\/kit\/_calendar.kit": {
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/build\/kit\/_calendar.html",
 		"oF": 0
 		},
 	"\/source\/kit\/_commonscript.kit": {
