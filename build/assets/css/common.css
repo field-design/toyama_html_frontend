@@ -1819,6 +1819,23 @@ a:hover {
 }
 
 /* =====================
+  errors
+===================== */
+.error {
+  color: #ff3860 !important;
+}
+
+.error.has-icon {
+  box-sizing: border-box;
+}
+
+.error.has-icon:before {
+  padding-right: .25em;
+  content: "\f12a";
+  font-family: FontAwesome;
+}
+
+/* =====================
   common layouts
 ===================== */
 /*  global

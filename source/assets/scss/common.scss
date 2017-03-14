@@ -721,13 +721,23 @@ a {
     font-weight: 900!important;
 }
 
-// @import "_details";
-//
-// @import "_entry";
+
+/* =====================
+  errors
+===================== */
+.error {
+    color: #ff3860!important;
+    &.has-icon {
+        box-sizing: border-box;
+        &:before {
+            padding-right: .25em;
+            content: "\f12a";
+            font-family: FontAwesome;
+        }
+    }
+}
 
 
-// icons
-// @import "_icomoon";
 
 // functions
 @import "functions/_preloader";
