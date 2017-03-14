@@ -1076,6 +1076,11 @@ img {
   }
 }
 
+.overview .details .accordion img {
+  max-width: 675px;
+  height: auto;
+}
+
 .overview .details .detail {
   padding: 0 0 30px;
 }
