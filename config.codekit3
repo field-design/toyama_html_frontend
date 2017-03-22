@@ -821,6 +821,12 @@
 		"oA": 0,
 		"oAP": "\/build\/order\/index.html",
 		"oF": 0
+		},
+	"\/source\/order\/input.kit": {
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/build\/order\/input.html",
+		"oF": 0
 		}
 	},
 "hooks": [
