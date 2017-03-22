@@ -1,0 +1,48 @@
+@import "_layout";
+@import "_style";
+
+h2 {
+    text-align: center;
+    @include font(20);
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    span {
+        border-bottom: solid 1px #000;
+        padding: 0 5px 5px;
+    }
+}
+
+.steps {
+    ul {
+        padding: 0;
+        margin: 0 auto;
+        display: table;
+        width: 100%;
+        table-layout: fixed;
+    }
+    .step {
+        padding: 1em;
+        list-style: none;
+        display: table-cell;
+        border: 1px solid #ddd;
+        text-align: center;
+        &.current {
+            background: #333;
+            color: white;
+        }
+    }
+}
+
+.order-table {
+    width: 100%;
+    margin: auto;
+    .text-left {
+        text-align: left;
+    }
+    .text-right {
+        text-align: right;
+    }
+    .text-center {
+        text-align: center;
+    }
+}

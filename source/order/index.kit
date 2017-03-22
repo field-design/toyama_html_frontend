@@ -1,0 +1,110 @@
+<!-- @import '/source/kit/settings' -->
+<!-- $page_title = お申し込み -->
+<!-- $description = ディスクリプション -->
+<!-- $keyword = キーワード,キーワード,キーワード -->
+<!-- $page_slug = order -->
+<!DOCTYPE html>
+<html lang="ja">
+<!-- @import '/source/kit/head' -->
+<body class="drawer drawer--right" id="top">
+<!-- @import '/source/kit/gtm' -->
+
+<!-- @import '/source/kit/preloading' -->
+
+<header class="global-header">
+    <h1>いまからえらべるTRAVEL</h1>
+    <div class="logo">
+        <a href="/"><img src="/assets/img/common/logo.svg" alt="いまからえらべるTRAVELinにいかわ"></a>
+    </div>
+    <!-- @import '/source/kit/global-nav' -->
+</header>
+<!-- END global-header -->
+
+
+<!-- START main -->
+<main role="main">
+
+<div class="breadcrumb">
+    <div data-lg>
+        <ul>
+            <li><a href="/">トップページ</a></li>
+            <li>お申し込み</li>
+        </ul>
+    </div>
+</div>
+
+<article>
+    <div data-lg>
+
+        <div class="steps">
+            <ul>
+                <li class="step current"><span>人数・オプション選択</span></li>
+                <li class="step"><span>お客様情報入力</span></li>
+                <li class="step"><span>ご予約内容確認</span></li>
+            </ul>
+        </div>
+
+        <h2><span>人数・オプション選択</span></h2>
+        <section class="order-cart">
+            <h3 class="product-ttl">富山入善 ます寿し手作り体験</h3>
+            <table class="order-table">
+                <thead>
+                    <tr>
+                        <th class="text-center">内訳</th>
+                        <th class="text-center">単価</th>
+                        <th class="text-center">数量</th>
+                        <th class="text-center">小計</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="text-left">おとな</td>
+                        <td class="text-right">1,800円</td>
+                        <td class="text-center"><input class="input" type="number" min="0" value="1"></td>
+                        <td class="text-right">3,600円</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">こども(幼児) </td>
+                        <td class="text-right">1,800円</td>
+                        <td class="text-center"><input class="input" type="number" min="0"></td>
+                        <td class="text-right">1,800円</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                      <th class="text-center" colspan="3">合計</th>
+                      <th class="text-center">5,400円</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <div class="pagenation">
+            <div class="back">
+                <button onclick="history.back()">戻る</button>
+            </div>
+            <div class="next">
+                <button type="submit" id="submit">次へ</button>
+            </div>
+        </div>
+    </div>
+</article>
+
+</main>
+<!-- END main -->
+
+
+<!-- @import '/source/kit/global-footer' -->
+
+<!-- @import '/source/kit/fonts' -->
+
+<!-- @import '/source/kit/commonscript' -->
+
+<!-- @import '/source/kit/gmap' -->
+
+<!-- Page Script -->
+
+
+<!-- @import '/source/kit/end' -->
+</body>
+</html>
