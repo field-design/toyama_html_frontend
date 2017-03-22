@@ -129,19 +129,22 @@
     </div>
 </div>
 
-<div class="steps">
-    <ul>
-        <li class="step"><span>人数・オプション選択</span></li>
-        <li class="step"><span>お客様情報入力</span></li>
-        <li class="step current"><span>ご予約内容確認</span></li>
-    </ul>
-</div>
-
 <article>
     <div data-lg>
+        <div class="steps">
+            <ul>
+                <li class="step"><span>人数・オプション選択</span></li>
+                <li class="step"><span>お客様情報入力</span></li>
+                <li class="step current"><span>ご予約内容確認</span></li>
+            </ul>
+        </div>
+
         <h2><span>ご予約内容確認</span></h2>
         <section class="order-check cart">
             <h3 class="product-ttl">富山入善 ます寿し手作り体験</h3>
+            <ul class="order-info">
+                <li><span>催行日</span>2017年4月20日</li>
+            </ul>
             <table class="order-table">
                 <thead>
                     <tr>
@@ -242,7 +245,7 @@
             </ul>
         </div>
 
-        <div class="mod_form_importance_btn row">
+        <div class="mod_form_importance_btn">
             <div class="check">
                 <p>
 	                <input type="checkbox" id="privacy" name="privacy" value="同意する">
@@ -256,7 +259,7 @@
             <div class="back">
                 <button onclick="history.back()">戻る</button>
             </div>
-            <div class="next">
+            <div class="next mod_form_btn">
                 <button type="submit" id="submit">決済画面へ移動</button>
             </div>
         </div>
@@ -339,7 +342,22 @@
 
 
 <!-- Page Script -->
-
+<script>
+// 送信ボタン表示制御
+$(function(){
+	//送信ボタンの無効、チェックボックスを外す
+	$(".mod_form_btn button").css({opacity:"0.5",cursor:"default"}).attr("disabled","disabed");
+	$(".mod_form_importance_btn input:checkbox").attr('checked',false);
+	//チェックボックスがクリックされると送信ボタン有効
+	$(".mod_form_importance_btn label,.mod_form_importance_btn input").click(function(){
+		if($(".mod_form_importance_btn input:checkbox").is(':checked')){
+			$(".mod_form_btn button").css({opacity:"1",cursor:"pointer"}).removeAttr("disabled");
+		}else{
+			 $(".mod_form_btn button").css({opacity:"0.5",cursor:"default"}).attr("disabled","disabed");
+	}
+	})
+});
+</script>
 
 <div id="fb-root"></div>
 <script>

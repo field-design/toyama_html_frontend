@@ -141,48 +141,54 @@
         </div>
 
         <h2><span>人数・オプション選択</span></h2>
-        <section class="order-cart">
-            <h3 class="product-ttl">富山入善 ます寿し手作り体験</h3>
-            <table class="order-table">
-                <thead>
-                    <tr>
-                        <th class="text-center">内訳</th>
-                        <th class="text-center">単価</th>
-                        <th class="text-center">数量</th>
-                        <th class="text-center">小計</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="text-left">おとな</td>
-                        <td class="text-right">1,800円</td>
-                        <td class="text-center"><input class="input" type="number" min="0" value="1"></td>
-                        <td class="text-right">3,600円</td>
-                    </tr>
-                    <tr>
-                        <td class="text-left">こども(幼児) </td>
-                        <td class="text-right">1,800円</td>
-                        <td class="text-center"><input class="input" type="number" min="0"></td>
-                        <td class="text-right">1,800円</td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                      <th class="text-center" colspan="3">合計</th>
-                      <th class="text-center">5,400円</th>
-                    </tr>
-                </tfoot>
-            </table>
-        </section>
 
-        <div class="pagenation">
-            <div class="back">
-                <button onclick="history.back()">戻る</button>
+        <form method="" action="input.html">
+            <section class="order-cart">
+                <h3 class="product-ttl">富山入善 ます寿し手作り体験</h3>
+                <ul class="order-info">
+                    <li><span>催行日</span>2017年4月20日</li>
+                </ul>
+                <table class="order-table">
+                    <thead>
+                        <tr>
+                            <th class="text-center">内訳</th>
+                            <th class="text-center">単価</th>
+                            <th class="text-center">数量</th>
+                            <th class="text-center">小計</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="text-left">おとな</td>
+                            <td class="text-right">1,800円</td>
+                            <td class="text-center"><input class="input" type="number" min="0" value="2"></td>
+                            <td class="text-right">3,600円</td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">こども(幼児) </td>
+                            <td class="text-right">1,800円</td>
+                            <td class="text-center"><input class="input" type="number" min="0" value="1"></td>
+                            <td class="text-right">1,800円</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                          <th class="text-center" colspan="3">合計</th>
+                          <th class="text-right">5,400円</th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+
+            <div class="pagenation">
+                <div class="back">
+                    <button onclick="history.back()">戻る</button>
+                </div>
+                <div class="next">
+                    <button type="submit" id="submit">次へ</button>
+                </div>
             </div>
-            <div class="next">
-                <button type="submit" id="submit">次へ</button>
-            </div>
-        </div>
+        </form>
     </div>
 </article>
 
