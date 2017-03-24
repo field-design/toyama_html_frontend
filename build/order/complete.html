@@ -131,17 +131,19 @@
 
 <article>
     <div data-lg>
-        <div class="steps">
-            <ul>
-                <li class="step"><span>人数・オプション選択</span></li>
-                <li class="step"><span>お客様情報入力</span></li>
-                <li class="step current"><span>ご予約内容確認</span></li>
-            </ul>
-        </div>
 
-        <h2><span>ご予約内容確認</span></h2>
+        <h2><span>ご予約完了</span></h2>
+        <section class="order-complete">
+            <h3 class="complete-ttl">お客様のご予約を受け付けました。</h3>
+            <p>説明文</p>
+        </section>
+
         <section class="order-check cart">
-            <h3 class="product-ttl">富山入善 ます寿し手作り体験</h3>
+            <h3 class="order-ttl">ご予約内容</h3>
+            <h4 class="product-ttl">富山入善 ます寿し手作り体験</h4>
+            <ul class="order-info">
+                <li><span>催行日</span>2017年4月20日</li>
+            </ul>
             <table class="order-table">
                 <thead>
                     <tr>
@@ -174,92 +176,11 @@
             </table>
         </section>
 
-        <section class="order-check input">
-            <h3 class="product-ttl">お申込者様の情報</h3>
-            <table class="order-table">
-                <tbody>
-                    <tr>
-                        <th class="text-center">お名前</th>
-                        <td class="text-left">山田 太郎</td>
-                    </tr>
-                    <tr>
-                        <th class="text-center">フリガナ</th>
-                        <td class="text-left">ヤマダ タロウ</td>
-                    </tr>
-                    <tr>
-                        <th class="text-center">メールアドレス</th>
-                        <td class="text-left">sample@example.com</td>
-                    </tr>
-                    <tr>
-                        <th class="text-center">ご住所</th>
-                        <td class="text-left">
-                            〒000-0000<br />
-                            富山県 富山市 〇〇町 0-0-0 〇〇ビル3F
-                        </td>
-                    </tr>
-                    <tr>
-                        <th class="text-center">お電話番号</th>
-                        <td class="text-left">000-0000-0000</td>
-                    </tr>
-                    <tr>
-                        <th class="text-center">携帯電話番号</th>
-                        <td class="text-left">000-0000-0000</td>
-                    </tr>
-                    <tr>
-                        <th class="text-center">ご生年月日</th>
-                        <td class="text-left">1980年01月01日</td>
-                    </tr>
-                    <tr>
-                        <th class="text-center">性別</th>
-                        <td class="text-left">男性</td>
-                    </tr>
-                    <tr>
-                        <th class="text-center">ご職業</th>
-                        <td class="text-left">会社員</td>
-                    </tr>
-                </tbody>
-            </table>
+        <section class="order-contact">
+            <h3 class="complete-ttl">ご予約に関するお問い合わせ先</h3>
+            <p>事業者情報（表示名・電話番号）</p>
         </section>
-<!-- 
-        <section class="order-check payment">
-            <h3 class="product-ttl">お支払方法</h3>
-            <table class="order-table">
-                <tbody>
-                    <tr>
-                        <th class="text-center">決済種別</th>
-                        <td class="text-left">クレジットカード決済</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section> -->
 
-        <div class="conditions">
-            <h5>旅行条件書</h5>
-            <ul>
-                <li>お申込み前に必ず <a href="https://www.kanko-pro.co.jp/agreement/agreement23.php" target="_blank">旅行条件書</a> をお読みください。</li>
-                <li>旅行条件書を保存するには（画面上部）ブラウザメニューの「ファイル」を選択、次に「名前をつけて保存」を選択します。</li>
-                <li>保存する場所、ファイル名を指定し、ファイルの種類を「WEBページ、HTMLのみ」もしくは「テキストファイル」にして「保存」を選択します。</li>
-            </ul>
-        </div>
-
-        <div class="mod_form_importance_btn row">
-            <div class="check">
-                <p>
-	                <input type="checkbox" id="privacy" name="privacy" value="同意する">
-	                <label class="privacy" for="privacy">旅行条件書を保存し旅行条件書の内容に同意する。</label>
-	            </p>
-            </div>
-            <p class="note">※上部チェックボックスに同意いただいた方のみお申し込みが可能です。</p>
-        </div>
-
-        <div class="pagenation">
-            <div class="back">
-                <button onclick="history.back()">戻る</button>
-            </div>
-            <div class="next mod_form_btn">
-                <button type="submit" id="submit">決済画面へ移動</button>
-            </div>
-        </div>
     </div>
 </article>
 
@@ -339,22 +260,7 @@
 
 
 <!-- Page Script -->
-<script>
-// 送信ボタン表示制御
-$(function(){
-	//送信ボタンの無効、チェックボックスを外す
-	$(".mod_form_btn button").css({opacity:"0.5",cursor:"default"}).attr("disabled","disabed");
-	$(".mod_form_importance_btn input:checkbox").attr('checked',false);
-	//チェックボックスがクリックされると送信ボタン有効
-	$(".mod_form_importance_btn label,.mod_form_importance_btn input").click(function(){
-		if($(".mod_form_importance_btn input:checkbox").is(':checked')){
-			$(".mod_form_btn button").css({opacity:"1",cursor:"pointer"}).removeAttr("disabled");
-		}else{
-			 $(".mod_form_btn button").css({opacity:"0.5",cursor:"default"}).attr("disabled","disabed");
-	}
-	})
-});
-</script>
+
 
 <div id="fb-root"></div>
 <script>
