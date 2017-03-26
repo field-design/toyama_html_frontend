@@ -911,28 +911,40 @@ h2 span {
 .order-cart,
 .order-input,
 .order-check,
-.order-payment {
+.order-payment,
+.order-complete,
+.order-contact {
   max-width: 650px;
   margin: auto;
 }
 
-.product-ttl {
+.product-ttl,
+.order-ttl,
+.complete-ttl {
   font: 400 20px/160% "Noto Sans Japanese", sans-serif;
   font: 400 2rem/160% "Noto Sans Japanese", sans-serif;
 }
 
-.order-info {
-  padding: 0;
-  margin: 0;
-}
-
-.order-info li {
+.complete-desc {
   font: 400 16px/160% "Noto Sans Japanese", sans-serif;
   font: 400 1.6rem/160% "Noto Sans Japanese", sans-serif;
-  list-style: none;
 }
 
-.order-info li span:after {
+.order-contact {
+  margin-bottom: 60px;
+}
+
+.contact-info {
+  padding: 0;
+}
+
+.contact-info li {
+  list-style: none;
+  font: 400 14px/160% "Noto Sans Japanese", sans-serif;
+  font: 400 1.4rem/160% "Noto Sans Japanese", sans-serif;
+}
+
+.contact-info li span:after {
   content: "：";
 }
 
@@ -1060,7 +1072,7 @@ h2 span {
 
 .conditions {
   max-width: 650px;
-  margin: 50px auto 25px;
+  margin: 50px auto 50px;
   padding: 10px 20px;
   letter-spacing: 1px;
   border: solid 1px #00a5b3;
@@ -1082,21 +1094,5 @@ h2 span {
   font-size: 13px;
   position: relative;
   line-height: 1.6;
-}
-
-.mod_form_importance_btn {
-  max-width: 650px;
-  margin: auto;
-  text-align: center;
-}
-
-.mod_form_importance_btn .check {
-  font: 400 16px/160% "Noto Sans Japanese", sans-serif;
-  font: 400 1.6rem/160% "Noto Sans Japanese", sans-serif;
-}
-
-.mod_form_importance_btn .note {
-  font: 400 12px/160% "Noto Sans Japanese", sans-serif;
-  font: 400 1.2rem/160% "Noto Sans Japanese", sans-serif;
 }
 /*# sourceMappingURL=order.css.map */
