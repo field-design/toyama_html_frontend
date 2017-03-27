@@ -107,6 +107,7 @@
                         </ul>
                     </li>
                     <li class="inquiry"><a href="/contact/"><i class="fa fa-envelope-o" aria-hidden="true"></i>お問い合わせ</a></li>
+                    <li class="sub"><a href="/guide/">サイトのご利用案内</a></li>
                     <li class="sub"><a href="https://www.kanko-pro.co.jp/privacy/" target="_blank">プライバシーポリシー</a></li>
                 </ul>
             </nav>
@@ -174,7 +175,7 @@
             <div class="sub-ttl">
                 <img src="/assets/img/index/sub_ttl.svg" alt="水が織りなす、奇跡の物語">
             </div>
-            <p>コピーが入ります。コピーが入ります。コピーが<br>コピーが入ります。コピーが入ります。コピーが入り<br>コピーが入ります。コピーが入ります。</p>
+            <p>いのちを育む「水」。<br>雨が降り注ぎ、地に染み込み、川をたどり、海へ流れ、<br>水蒸気となって、また雨となる。<br>水は、多くの恵みを運びます。<br>山から海へ、はじまりから終わりまでを物語る、水の旅。<br>水に沿って広がる物語の舞台。<br>それが「富山湾・黒部峡谷・越中にいかわ観光圏」です。<br>さあ、美しき水の冒険へ。</p>
             <div class="more">
                 <a href="/niikawa/about">詳しくみる</a>
             </div>
@@ -371,12 +372,12 @@
                         <td><a href="#">魚津市</a></td>
                     </tr>
                     <tr>
-                        <td><a href="https://www.kanko-pro.co.jp/privacy/" target="_blank">プライバシーポリシー</a></td>
+                        <td><a href="/guide/">サイトのご利用案内</a></td>
                         <td><a href="#">見学する</a></td>
                         <td><a href="#">黒部市</a></td>
                     </tr>
                     <tr>
-                        <td><a href="#"></a></td>
+                        <td><a href="https://www.kanko-pro.co.jp/privacy/" target="_blank">プライバシーポリシー</a></td>
                         <td><a href="#">食べる</a></td>
                         <td><a href="#">入善町</a></td>
                     </tr>
@@ -443,14 +444,28 @@
 <script>
     $(function(){
         $(".choice .area").on("click", function() {
-            $(".area-accordion").slideToggle();
-            $(this).toggleClass("active");//追加部分
+            if ($(".area-accordion").css('display') == 'none'){
+                $(".area-accordion").slideDown();
+                $(".choice .area").addClass("active");
+                $(".choice .genre").removeClass("active");
+                $(".genre-accordion").slideUp();
+            } else {
+                $(".area-accordion").slideUp();
+                $(".choice .area").removeClass("active");
+            }
         });
     });
     $(function(){
         $(".choice .genre").on("click", function() {
-            $(".genre-accordion").slideToggle();
-            $(this).toggleClass("active");//追加部分
+            if ($(".genre-accordion").css('display') == 'none'){
+                $(".genre-accordion").slideDown();
+                $(".choice .genre").addClass("active");
+                $(".choice .area").removeClass("active");
+                $(".area-accordion").slideUp();
+            } else {
+                $(".genre-accordion").slideUp();
+                $(".choice .genre").removeClass("active");
+            }
         });
     });
 </script>
