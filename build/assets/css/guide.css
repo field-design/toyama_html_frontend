@@ -878,8 +878,14 @@ h2 {
   text-align: center;
   font: 400 20px/160% "Noto Sans Japanese", sans-serif;
   font: 400 2rem/160% "Noto Sans Japanese", sans-serif;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   letter-spacing: 2px;
+}
+
+@media screen and (max-width: 479px) {
+  h2 {
+    margin-bottom: 30px;
+  }
 }
 
 h2 span {
@@ -887,429 +893,452 @@ h2 span {
   padding: 0 5px 5px;
 }
 
-.steps {
-  max-width: 650px;
-  margin: 15px auto 30px;
-  overflow: hidden;
+h3 {
+  width: 100%;
+  max-width: 1000px;
+  font: 400 18px/160% "Noto Sans Japanese", sans-serif;
+  font: 400 1.8rem/160% "Noto Sans Japanese", sans-serif;
+  text-align: center;
+  line-height: 50px;
+  letter-spacing: 2px;
+  margin: 0 auto 20px;
+  color: #fff;
+  background-color: #000;
 }
 
-.steps ul {
+@media screen and (min-width: 480px) {
+  h3 {
+    font: 400 20px/160% "Noto Sans Japanese", sans-serif;
+    font: 400 2rem/160% "Noto Sans Japanese", sans-serif;
+    line-height: 50px;
+  }
+}
+
+.flow {
+  text-align: center;
+}
+
+.flow img {
+  max-width: 25px;
+}
+
+@media screen and (min-width: 480px) {
+  .flow img {
+    max-width: 100%;
+  }
+}
+
+.flow h4 {
+  margin: 10px 0 3px;
+  font: 400 17px/160% "Noto Sans Japanese", sans-serif;
+  font: 400 1.7rem/160% "Noto Sans Japanese", sans-serif;
+  color: #787878;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 480px) {
+  .flow h4 {
+    font: 400 19px/160% "Noto Sans Japanese", sans-serif;
+    font: 400 1.9rem/160% "Noto Sans Japanese", sans-serif;
+    letter-spacing: 1px;
+  }
+}
+
+.flow p {
   margin: 0;
-  padding: 0;
-  counter-reset: step;
-}
-
-.steps li {
-  list-style-type: none;
-  width: 33%;
-  float: left;
-  font-size: 12px;
-  position: relative;
-  text-align: center;
-  text-transform: uppercase;
-  color: #7d7d7d;
-}
-
-.steps li:before {
-  width: 30px;
-  height: 30px;
-  content: counter(step);
-  counter-increment: step;
-  line-height: 30px;
-  border: 2px solid #7d7d7d;
-  display: block;
-  text-align: center;
-  margin: 0 auto 10px auto;
-  border-radius: 50%;
-  background-color: white;
-}
-
-.steps li:after {
-  width: 100%;
-  height: 2px;
-  content: '';
-  position: absolute;
-  background-color: #7d7d7d;
-  top: 15px;
-  left: -50%;
-  z-index: -1;
-}
-
-.steps li:first-child:after {
-  content: none;
-}
-
-.steps li.current {
-  color: green;
-}
-
-.steps li.current:before {
-  border-color: #55b776;
-}
-
-.steps li.current + li:after {
-  background-color: #55b776;
-}
-
-.order-style {
-  max-width: 650px;
-  margin: auto;
-  padding: 10px 0;
-}
-
-.order-cart,
-.order-input,
-.order-check,
-.order-payment,
-.order-complete,
-.order-contact {
-  max-width: 650px;
-  margin: auto;
-}
-
-.product-ttl,
-.order-ttl,
-.contact-ttl {
-  color: #4d4d4d;
-  font: 400 20px/160% "Noto Sans Japanese", sans-serif;
-  font: 400 2rem/160% "Noto Sans Japanese", sans-serif;
-  letter-spacing: 3px;
-  background-color: #ededed;
-  text-align: center;
-}
-
-.complete-ttl {
-  font: 400 20px/160% "Noto Sans Japanese", sans-serif;
-  font: 400 2rem/160% "Noto Sans Japanese", sans-serif;
-  letter-spacing: 3px;
-  text-align: center;
-}
-
-.order-desc,
-.complete-desc {
-  font: 400 16px/160% "Noto Sans Japanese", sans-serif;
-  font: 400 1.6rem/160% "Noto Sans Japanese", sans-serif;
-}
-
-.order-contact {
-  margin-bottom: 60px;
-}
-
-.contact-info {
-  padding: 0;
-}
-
-.contact-info li {
-  list-style: none;
-  font: 400 14px/160% "Noto Sans Japanese", sans-serif;
-  font: 400 1.4rem/160% "Noto Sans Japanese", sans-serif;
-}
-
-.contact-info li span:after {
-  content: "：";
-}
-
-.order-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.order-table th,
-.order-table td {
-  font: 400 14px/160% "Noto Sans Japanese", sans-serif;
-  font: 400 1.4rem/160% "Noto Sans Japanese", sans-serif;
-  border: 1px solid #dbdbdb;
-  border-width: 0 0 1px;
-  padding: .5em .75em;
-  vertical-align: top;
-}
-
-.order-table thead th,
-.order-table thead td {
-  border-width: 0 0 2px;
-  color: #7a7a7a;
-}
-
-.order-table tfoot th,
-.order-table tfoot td {
-  border-width: 2px 0 0;
-  color: #7a7a7a;
-}
-
-.order-table tbody tr:hover {
-  background-color: #fafafa;
-}
-
-.order-table tbody tr th {
-  width: 8em;
-}
-
-.order-table tbody .input {
-  text-align: center;
-  max-width: 3em;
-}
-
-.order-table tbody ul {
-  margin: 0;
-  padding: 0;
-}
-
-.order-table tbody ul li {
-  list-style: none;
-}
-
-.order-table .text-left {
-  text-align: left;
-}
-
-.order-table .text-right {
-  text-align: right;
-}
-
-.order-table .text-center {
-  text-align: center;
-}
-
-.order-input .input-ttl,
-.order-payment .input-ttl {
-  font: 400 20px/160% "Noto Sans Japanese", sans-serif;
-  font: 400 2rem/160% "Noto Sans Japanese", sans-serif;
-}
-
-.order-input .input-area,
-.order-payment .input-area {
-  margin: 10px 0;
-}
-
-.order-input .input-area label,
-.order-payment .input-area label {
-  font: 400 16px/160% "Noto Sans Japanese", sans-serif;
-  font: 400 1.6rem/160% "Noto Sans Japanese", sans-serif;
-}
-
-.order-input .input-area .label,
-.order-payment .input-area .label {
-  display: block;
-  margin-bottom: .25em;
-}
-
-.order-input .input-area .radio,
-.order-input .input-area .checkbox,
-.order-payment .input-area .radio,
-.order-payment .input-area .checkbox {
-  margin-right: .5em;
-}
-
-.order-input .input-field,
-.order-payment .input-field {
-  display: inline;
-  box-sizing: border-box;
-}
-
-.order-input .input-field input,
-.order-input .input-field textarea,
-.order-input .input-field select,
-.order-payment .input-field input,
-.order-payment .input-field textarea,
-.order-payment .input-field select {
-  border-radius: 3px;
-  display: inline;
-  font: 400 16px/160% "Noto Sans Japanese", sans-serif;
-  font: 400 1.6rem/160% "Noto Sans Japanese", sans-serif;
-  height: 2.285em;
-  line-height: 1.5;
-  padding: .25em 1em;
-  margin: .25em;
-  background-color: #fff;
-  border: 1px solid #dbdbdb;
-  color: #363636;
-  box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.1);
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
-  box-sizing: border-box;
-}
-
-.order-input .input-field textarea,
-.order-payment .input-field textarea {
-  display: block;
-  width: 100%;
-  max-width: 100%;
-  height: 100px;
-}
-
-.order-input .input-field input[type="radio"],
-.order-input .input-field input[type="checkbox"],
-.order-payment .input-field input[type="radio"],
-.order-payment .input-field input[type="checkbox"] {
-  border: none;
-  box-shadow: none;
-  vertical-align: middle;
-}
-
-.order-input .input-field .notes,
-.order-payment .input-field .notes {
-  font: 400 16px/160% "Noto Sans Japanese", sans-serif;
-  font: 400 1.6rem/160% "Noto Sans Japanese", sans-serif;
-}
-
-.order-input .input-field *:focus,
-.order-payment .input-field *:focus {
-  outline: 0;
-  border-color: #00d1b2;
-}
-
-.order-input .input-field .short,
-.order-payment .input-field .short {
-  width: calc(30% - 1em);
-}
-
-@media screen and (min-width: 480px) {
-  .order-input .input-field .short,
-  .order-payment .input-field .short {
-    max-width: 120px;
-  }
-}
-
-.order-input .input-field .medium,
-.order-payment .input-field .medium {
-  width: 100%;
-}
-
-@media screen and (min-width: 480px) {
-  .order-input .input-field .medium,
-  .order-payment .input-field .medium {
-    max-width: 230px;
-  }
-}
-
-.order-input .input-field .long,
-.order-payment .input-field .long {
-  width: 100%;
-}
-
-@media screen and (min-width: 480px) {
-  .order-input .input-field .long,
-  .order-payment .input-field .long {
-    max-width: 400px;
-  }
-}
-
-.order-input .input-field .full,
-.order-payment .input-field .full {
-  width: 100%;
-}
-
-@media screen and (max-width: 479px) {
-  .order-input .input-field.box,
-  .order-payment .input-field.box {
-    position: relative;
-  }
-  .order-input .input-field.box .select,
-  .order-payment .input-field.box .select {
-    width: calc(100% - 3em);
-  }
-  .order-input .input-field.box .select select,
-  .order-payment .input-field.box .select select {
-    width: inherit;
-  }
-  .order-input .input-field.box .notes,
-  .order-payment .input-field.box .notes {
-    width: 1em;
-  }
-}
-
-.notes-list {
-  padding: 0;
-  margin: 1em;
-}
-
-.notes-list li {
-  position: relative;
-  padding-left: 1.25em;
   font: 400 13px/160% "Noto Sans Japanese", sans-serif;
   font: 400 1.3rem/160% "Noto Sans Japanese", sans-serif;
-  list-style: none;
+  color: #505050;
 }
 
-.notes-list li:before {
+@media screen and (min-width: 480px) {
+  .flow p {
+    font: 400 16px/160% "Noto Sans Japanese", sans-serif;
+    font: 400 1.6rem/160% "Noto Sans Japanese", sans-serif;
+    letter-spacing: 1px;
+  }
+}
+
+.flow .wrap {
+  position: relative;
+  padding-bottom: 40px;
+}
+
+.flow .wrap.left {
+  float: left;
+}
+
+.flow .wrap.right {
+  float: right;
+}
+
+.flow .wrap.blue:before {
   position: absolute;
+  content: "";
+  background-image: url(//cdn.visit-town.com/common/img/guide/blue_triangle.png);
+  background-size: cover;
+  width: 20px;
+  height: 20px;
   top: 0;
   left: 0;
-  width: 1em;
-  height: 1em;
-  content: "※";
+  z-index: 10;
 }
 
-.pagenation {
-  margin: 30px 0;
-  text-align: center;
+@media screen and (min-width: 480px) {
+  .flow .wrap.blue:before {
+    width: 30px;
+    height: 30px;
+  }
 }
 
-.pagenation .back,
-.pagenation .next {
-  display: inline-block;
+.flow .wrap.green:before {
+  position: absolute;
+  content: "";
+  background-image: url(//cdn.visit-town.com/common/img/guide/green_triangle.png);
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  left: 0;
+  z-index: 10;
 }
 
-.pagenation button {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  outline: none;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  padding: .25em 2em;
-  margin: 1em;
-  font: 400 20px/160% "Noto Sans Japanese", sans-serif;
-  font: 400 2rem/160% "Noto Sans Japanese", sans-serif;
-  color: #666;
-  border: 1px solid;
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
+@media screen and (min-width: 480px) {
+  .flow .wrap.green:before {
+    width: 30px;
+    height: 30px;
+  }
 }
 
-.pagenation button:hover {
-  color: white;
-  background: #666;
+.flow .wrap .frame {
+  padding: 15px 5px;
+  border: solid 5px #eaeaea;
+  position: relative;
 }
 
-.conditions {
-  max-width: 650px;
-  margin: 50px auto 50px;
-  padding: 10px 20px;
+@media screen and (min-width: 480px) {
+  .flow .wrap .frame {
+    padding: 20px 5px;
+    border: solid 8px #eaeaea;
+  }
+}
+
+.flow .flow-1 .wrap:before {
+  position: absolute;
+  content: "";
+  background-image: url(//cdn.visit-town.com/common/img/guide/gray_bar.png);
+  width: 9px;
+  height: 40px;
+  bottom: 0;
+  left: 24.25%;
+  margin-left: -4.5px;
+}
+
+.flow .flow-1 .wrap:after {
+  position: absolute;
+  content: "";
+  background-image: url(//cdn.visit-town.com/common/img/guide/gray_bar.png);
+  width: 9px;
+  height: 40px;
+  bottom: 0;
+  right: 24.25%;
+  margin-right: -4.5px;
+}
+
+.flow .flow-2 .wrap:before {
+  position: absolute;
+  content: "";
+  background-image: url(//cdn.visit-town.com/common/img/guide/gray_bar.png);
+  width: 9px;
+  height: 40px;
+  bottom: 0;
+  left: 24.25%;
+  margin-left: -4.5px;
+}
+
+.flow .flow-2 .wrap:after {
+  position: absolute;
+  content: "";
+  background-image: url(//cdn.visit-town.com/common/img/guide/gray_bar.png);
+  width: 9px;
+  height: 40px;
+  bottom: 0;
+  right: 24.25%;
+  margin-right: -4.5px;
+}
+
+.flow .flow-3 .wrap, .flow .flow-4 .wrap, .flow .flow-5 .wrap {
+  width: 49%;
+}
+
+.flow .flow-3 .wrap.right:after, .flow .flow-4 .wrap.right:after, .flow .flow-5 .wrap.right:after {
+  position: absolute;
+  content: "";
+  background-image: url(//cdn.visit-town.com/common/img/guide/gray_bar.png);
+  width: 9px;
+  height: 40px;
+  bottom: 0;
+  left: 50%;
+  margin-left: -4.5px;
+}
+
+.flow .flow-3 .wrap {
+  width: 49%;
+}
+
+.flow .flow-3 .wrap.left:after {
+  position: absolute;
+  content: "";
+  background-image: url(//cdn.visit-town.com/common/img/guide/gray_bar.png);
+  width: 9px;
+  height: 40px;
+  bottom: 0;
+  left: 50%;
+  margin-left: -4.5px;
+}
+
+.flow .flow-4 .wrap.left:after, .flow .flow-5 .wrap.left:after {
+  position: absolute;
+  content: "";
+  background-image: url(//cdn.visit-town.com/common/img/guide/gray_bar.png);
+  width: 9px;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  margin-left: -4.5px;
+}
+
+.flow .flow-6 .wrap.left {
+  width: 32%;
+  float: left;
+}
+
+.flow .flow-6 .wrap.left:after {
+  position: absolute;
+  content: "";
+  background-image: url(//cdn.visit-town.com/common/img/guide/gray_bar.png);
+  width: 9px;
+  height: 100%;
+  top: 0;
+  left: 76.5%;
+  margin-left: -4.5px;
+}
+
+.flow .flow-6 .irregular {
+  width: 67%;
+  float: right;
+  padding-top: 56px;
+  position: relative;
+}
+
+.flow .flow-6 .irregular:before {
+  position: absolute;
+  content: "";
+  background-color: #eaeaea;
+  width: 50%;
+  height: 8px;
+  top: 0;
+  left: 50%;
+  margin-left: -25%;
+}
+
+.flow .flow-6 .irregular .wrap {
+  width: 49%;
+  float: left;
+}
+
+.flow .flow-6 .irregular .wrap.center {
+  margin-right: 2%;
+}
+
+.flow .flow-6 .irregular .wrap.center:after {
+  position: absolute;
+  content: "";
+  background-image: url(//cdn.visit-town.com/common/img/guide/gray_bar.png);
+  width: 9px;
+  height: 40px;
+  bottom: 0;
+  left: 50%;
+  margin-left: -4.5px;
+}
+
+.flow .flow-6 .irregular .wrap.center .frame:before {
+  position: absolute;
+  content: "";
+  background-image: url(//cdn.visit-town.com/common/img/guide/gray_bar.png);
+  width: 9px;
+  height: 56px;
+  top: -61px;
+  left: 50%;
+  margin-left: -4.5px;
+}
+
+@media screen and (min-width: 480px) {
+  .flow .flow-6 .irregular .wrap.center .frame:before {
+    top: -64px;
+  }
+}
+
+.flow .flow-6 .irregular .wrap.right .frame:before {
+  position: absolute;
+  content: "";
+  background-image: url(//cdn.visit-town.com/common/img/guide/down_arrow.png);
+  width: 53px;
+  height: 56px;
+  top: -61px;
+  left: 50%;
+  margin-left: -26.5px;
+}
+
+@media screen and (min-width: 480px) {
+  .flow .flow-6 .irregular .wrap.right .frame:before {
+    top: -64px;
+  }
+}
+
+.flow .flow-7 .wrap {
+  padding-bottom: 60px;
+}
+
+.flow .flow-7 .wrap:after {
+  position: absolute;
+  content: "";
+  background-image: url(//cdn.visit-town.com/common/img/guide/down_arrow.png);
+  width: 53px;
+  height: 56px;
+  bottom: 4px;
+  left: 50%;
+  margin-left: -26.5px;
+}
+
+.cancel {
+  background-color: #f0f0f0;
+  margin: 5px auto 40px;
+  padding: 5px 0;
+}
+
+@media screen and (min-width: 480px) {
+  .cancel {
+    margin: 10px auto 50px;
+  }
+}
+
+.cancel p {
+  font: 400 13px/160% "Noto Sans Japanese", sans-serif;
+  font: 400 1.3rem/160% "Noto Sans Japanese", sans-serif;
+  margin: 10px 0;
+  padding: 0 15px;
+  line-height: 1.8;
+}
+
+@media screen and (min-width: 480px) {
+  .cancel p {
+    font: 400 14px/160% "Noto Sans Japanese", sans-serif;
+    font: 400 1.4rem/160% "Noto Sans Japanese", sans-serif;
+    line-height: 1.8;
+  }
+}
+
+.cancel p.ttl {
+  font: 400 15px/160% "Noto Sans Japanese", sans-serif;
+  font: 400 1.5rem/160% "Noto Sans Japanese", sans-serif;
+  color: #797979;
+  padding: 0 15px;
+}
+
+@media screen and (min-width: 480px) {
+  .cancel p.ttl {
+    font: 400 16px/160% "Noto Sans Japanese", sans-serif;
+    font: 400 1.6rem/160% "Noto Sans Japanese", sans-serif;
+  }
+}
+
+.contract {
+  padding-bottom: 10px;
+}
+
+.contract h4 {
+  width: 100%;
+  max-width: 1000px;
+  font: 400 15px/160% "Noto Sans Japanese", sans-serif;
+  font: 400 1.5rem/160% "Noto Sans Japanese", sans-serif;
+  line-height: 45px;
   letter-spacing: 1px;
-  border: solid 1px #00a5b3;
+  margin: 0 auto;
+  color: #fff;
+  background-color: #000;
 }
 
-.conditions h5 {
+@media screen and (min-width: 480px) {
+  .contract h4 {
+    font: 400 16px/160% "Noto Sans Japanese", sans-serif;
+    font: 400 1.6rem/160% "Noto Sans Japanese", sans-serif;
+    line-height: 50px;
+  }
+}
+
+.contract h4 span {
+  padding: 0 15px;
+}
+
+.contract p {
+  font: 400 13px/160% "Noto Sans Japanese", sans-serif;
+  font: 400 1.3rem/160% "Noto Sans Japanese", sans-serif;
+  line-height: 1.8;
+}
+
+@media screen and (min-width: 480px) {
+  .contract p {
+    font: 400 14px/160% "Noto Sans Japanese", sans-serif;
+    font: 400 1.4rem/160% "Noto Sans Japanese", sans-serif;
+    line-height: 1.8;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .contract p span {
+    display: block;
+    padding: 0 15px;
+  }
+}
+
+.disclaimer {
+  background-color: #f0f0f0;
+  margin: 0 auto 50px;
+  padding: 15px 0;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.disclaimer h5 {
+  color: #797979;
+  font: 400 15px/160% "Noto Sans Japanese", sans-serif;
+  font: 400 1.5rem/160% "Noto Sans Japanese", sans-serif;
+  letter-spacing: 1px;
   margin: 0;
-  padding-left: 23px;
-  position: relative;
-  font: 400 20px/160% "Noto Sans Japanese", sans-serif;
-  font: 400 2rem/160% "Noto Sans Japanese", sans-serif;
+  padding: 5px 15px 0 15px;
 }
 
-.conditions ul {
-  margin: 5px 0;
+@media screen and (min-width: 480px) {
+  .disclaimer h5 {
+    font: 400 16px/160% "Noto Sans Japanese", sans-serif;
+    font: 400 1.6rem/160% "Noto Sans Japanese", sans-serif;
+  }
 }
 
-.conditions ul li {
-  font-size: 13px;
-  position: relative;
-  line-height: 1.6;
+.disclaimer p {
+  font: 400 13px/160% "Noto Sans Japanese", sans-serif;
+  font: 400 1.3rem/160% "Noto Sans Japanese", sans-serif;
+  line-height: 1.8;
+  margin: 5px 0 15px;
+  padding: 0 15px;
 }
 
-.agreement {
-  text-align: center;
+@media screen and (min-width: 480px) {
+  .disclaimer p {
+    font: 400 14px/160% "Noto Sans Japanese", sans-serif;
+    font: 400 1.4rem/160% "Noto Sans Japanese", sans-serif;
+    line-height: 1.8;
+  }
 }
-
-.agreement .check {
-  font: 400 16px/160% "Noto Sans Japanese", sans-serif;
-  font: 400 1.6rem/160% "Noto Sans Japanese", sans-serif;
-}
-
-.agreement .note {
-  font: 400 12px/160% "Noto Sans Japanese", sans-serif;
-  font: 400 1.2rem/160% "Noto Sans Japanese", sans-serif;
-}
-/*# sourceMappingURL=order.css.map */
+/*# sourceMappingURL=guide.css.map */

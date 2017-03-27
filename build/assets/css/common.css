@@ -1696,8 +1696,15 @@ a:hover {
 }
 
 .global-footer .nav-footer table td {
-  font: 400 14px/160% "Noto Sans Japanese", sans-serif;
-  font: 400 1.4rem/160% "Noto Sans Japanese", sans-serif;
+  font: 400 13px/160% "Noto Sans Japanese", sans-serif;
+  font: 400 1.3rem/160% "Noto Sans Japanese", sans-serif;
+}
+
+@media screen and (min-width: 480px) {
+  .global-footer .nav-footer table td {
+    font: 400 14px/160% "Noto Sans Japanese", sans-serif;
+    font: 400 1.4rem/160% "Noto Sans Japanese", sans-serif;
+  }
 }
 
 .global-footer .nav-footer table td:nth-child(1) a {
