@@ -884,6 +884,8 @@ h2 {
 
 @media screen and (max-width: 479px) {
   h2 {
+    font: 400 18px/160% "Noto Sans Japanese", sans-serif;
+    font: 400 1.8rem/160% "Noto Sans Japanese", sans-serif;
     margin-bottom: 30px;
   }
 }
@@ -896,10 +898,10 @@ h2 span {
 h3 {
   width: 100%;
   max-width: 1000px;
-  font: 400 18px/160% "Noto Sans Japanese", sans-serif;
-  font: 400 1.8rem/160% "Noto Sans Japanese", sans-serif;
+  font: 400 17px/160% "Noto Sans Japanese", sans-serif;
+  font: 400 1.7rem/160% "Noto Sans Japanese", sans-serif;
   text-align: center;
-  line-height: 50px;
+  line-height: 40px;
   letter-spacing: 2px;
   margin: 0 auto 20px;
   color: #fff;
@@ -1262,7 +1264,7 @@ h3 {
   max-width: 1000px;
   font: 400 15px/160% "Noto Sans Japanese", sans-serif;
   font: 400 1.5rem/160% "Noto Sans Japanese", sans-serif;
-  line-height: 45px;
+  line-height: 40px;
   letter-spacing: 1px;
   margin: 0 auto;
   color: #fff;
