@@ -1764,6 +1764,10 @@ a:hover {
   }
 }
 
+.global-footer .copyright a {
+  color: #666666;
+}
+
 .section-style {
   padding: 50px 0;
 }
