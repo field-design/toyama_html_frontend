@@ -428,17 +428,20 @@
 <script src="/assets/js/jquery.bxslider.min.js"></script>
 <script type="text/javascript">
     $(function(){
-        $('.bxslider').bxSlider({
-            mode: 'fade',
-            auto: true,
-            speed: 2000,
-            pause: 6000,
-            // pager: false,
-            controls: false,
-            adaptiveHeight: true,
-            adaptiveHeightSpeed: 0,
-            touchEnabled: false,
-        });
+        var sliderImg = $('.bxslider .slide').length;
+        if(sliderImg > 1){
+            $('.bxslider').bxSlider({
+                mode: 'fade',
+                auto: true,
+                speed: 2000,
+                pause: 6000,
+                // pager: false,
+                controls: false,
+                adaptiveHeight: true,
+                adaptiveHeightSpeed: 0,
+                touchEnabled: false,
+            });
+        }
     });
 </script>
 <script>
