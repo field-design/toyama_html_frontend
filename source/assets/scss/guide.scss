@@ -1,0 +1,397 @@
+@import "_layout";
+@import "_style";
+
+h2 {
+    text-align: center;
+    @include font(20);
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+    @media screen and (max-width: $sm - 1) {
+        @include font(18);
+        margin-bottom: 30px;
+    }
+    span {
+        border-bottom: solid 1px #000;
+        padding: 0 5px 5px;
+    }
+}
+
+h3 {
+    width: 100%;
+    max-width: 1000px;
+    @include font(17);
+    text-align: center;
+    line-height: 40px;
+    letter-spacing: 2px;
+    margin: 0 auto 20px;
+    color: #fff;
+    background-color: #000;
+    @media screen and (min-width: $sm) {
+        @include font(20);
+        line-height: 50px;
+    }
+}
+
+.flow {
+    text-align: center;
+    img {
+        max-width: 25px;
+        @media screen and (min-width: $sm) {
+            max-width: 100%;
+        }
+    }
+    h4 {
+        margin: 10px 0 3px;
+        @include font(17);
+        color: #787878;
+        font-weight: bold;
+        @media screen and (min-width: $sm) {
+            @include font(19);
+            letter-spacing: 1px;
+        }
+    }
+    p {
+        margin: 0;
+        @include font(13);
+        color: #505050;
+        @media screen and (min-width: $sm) {
+            @include font(16);
+            letter-spacing: 1px;
+        }
+    }
+    .wrap {
+        position: relative;
+        padding-bottom: 40px;
+        &.left {
+            float: left;
+        }
+        &.right {
+            float: right;
+        }
+        &.blue {
+            &:before {
+                position: absolute;
+                content: "";
+                background-image: url(//cdn.visit-town.com/common/img/guide/blue_triangle.png);
+                background-size: cover;
+                width: 20px;
+                height: 20px;
+                top: 0;
+                left: 0;
+                z-index: 10;
+                @media screen and (min-width: $sm) {
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+        &.green {
+            &:before {
+                position: absolute;
+                content: "";
+                background-image: url(//cdn.visit-town.com/common/img/guide/green_triangle.png);
+                background-size: cover;
+                width: 20px;
+                height: 20px;
+                top: 0;
+                left: 0;
+                z-index: 10;
+                @media screen and (min-width: $sm) {
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+        .frame {
+            padding: 15px 5px;
+            border: solid 5px #eaeaea;
+            position: relative;
+            @media screen and (min-width: $sm) {
+                padding: 20px 5px;
+                border: solid 8px #eaeaea;
+            }
+        }
+    }
+    .flow-1 {
+        .wrap {
+            &:before {
+                position: absolute;
+                content: "";
+                background-image: url(//cdn.visit-town.com/common/img/guide/gray_bar.png);
+                width: 9px;
+                height: 40px;
+                bottom: 0;
+                left: 24.25%;
+                margin-left: -4.5px;
+            }
+            &:after {
+                position: absolute;
+                content: "";
+                background-image: url(//cdn.visit-town.com/common/img/guide/gray_bar.png);
+                width: 9px;
+                height: 40px;
+                bottom: 0;
+                right: 24.25%;
+                margin-right: -4.5px;
+            }
+        }
+    }
+    .flow-2 {
+        .wrap {
+            &:before {
+                position: absolute;
+                content: "";
+                background-image: url(//cdn.visit-town.com/common/img/guide/gray_bar.png);
+                width: 9px;
+                height: 40px;
+                bottom: 0;
+                left: 24.25%;
+                margin-left: -4.5px;
+            }
+            &:after {
+                position: absolute;
+                content: "";
+                background-image: url(//cdn.visit-town.com/common/img/guide/gray_bar.png);
+                width: 9px;
+                height: 40px;
+                bottom: 0;
+                right: 24.25%;
+                margin-right: -4.5px;
+            }
+        }
+    }
+    .flow-3,.flow-4,.flow-5 {
+        .wrap {
+            width: 49%;
+            &.right {
+                &:after {
+                    position: absolute;
+                    content: "";
+                    background-image: url(//cdn.visit-town.com/common/img/guide/gray_bar.png);
+                    width: 9px;
+                    height: 40px;
+                    bottom: 0;
+                    left: 50%;
+                    margin-left: -4.5px;
+                }
+            }
+        }
+    }
+    .flow-3 {
+        .wrap {
+            width: 49%;
+            &.left {
+                &:after {
+                    position: absolute;
+                    content: "";
+                    background-image: url(//cdn.visit-town.com/common/img/guide/gray_bar.png);
+                    width: 9px;
+                    height: 40px;
+                    bottom: 0;
+                    left: 50%;
+                    margin-left: -4.5px;
+                }
+            }
+        }
+    }
+    .flow-4,.flow-5 {
+        .wrap.left {
+            &:after {
+                position: absolute;
+                content: "";
+                background-image: url(//cdn.visit-town.com/common/img/guide/gray_bar.png);
+                width: 9px;
+                height: 100%;
+                top: 0;
+                left: 50%;
+                margin-left: -4.5px;
+            }
+        }
+    }
+    .flow-6 {
+        .wrap.left {
+            width: 32%;
+            float: left;
+            &:after {
+                position: absolute;
+                content: "";
+                background-image: url(//cdn.visit-town.com/common/img/guide/gray_bar.png);
+                width: 9px;
+                height: 100%;
+                top: 0;
+                left: 76.5%;
+                margin-left: -4.5px;
+            }
+        }
+        .irregular {
+            width: 67%;
+            float: right;
+            padding-top: 56px;
+            position: relative;
+            &:before {
+                position: absolute;
+                content: "";
+                background-color: #eaeaea;
+                width: 50%;
+                height: 8px;
+                top: 0;
+                left: 50%;
+                margin-left: -25%;
+            }
+            .wrap {
+                width: 49%;
+                float: left;
+                &.center {
+                    margin-right: 2%;
+                    &:after {
+                        position: absolute;
+                        content: "";
+                        background-image: url(//cdn.visit-town.com/common/img/guide/gray_bar.png);
+                        width: 9px;
+                        height: 40px;
+                        bottom: 0;
+                        left: 50%;
+                        margin-left: -4.5px;
+                    }
+                    .frame {
+                        &:before {
+                            position: absolute;
+                            content: "";
+                            background-image: url(//cdn.visit-town.com/common/img/guide/gray_bar.png);
+                            width: 9px;
+                            height: 56px;
+                            top: -61px;
+                            left: 50%;
+                            margin-left: -4.5px;
+                            @media screen and (min-width: $sm) {
+                                top: -64px;
+                            }
+                        }
+                    }
+                }
+                &.right {
+                    .frame {
+                        &:before {
+                            position: absolute;
+                            content: "";
+                            background-image: url(//cdn.visit-town.com/common/img/guide/down_arrow.png);
+                            width: 53px;
+                            height: 56px;
+                            top: -61px;
+                            left: 50%;
+                            margin-left: -26.5px;
+                            @media screen and (min-width: $sm) {
+                                top: -64px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .flow-7 {
+        .wrap {
+            padding-bottom: 60px;
+            &:after {
+                position: absolute;
+                content: "";
+                background-image: url(//cdn.visit-town.com/common/img/guide/down_arrow.png);
+                width: 53px;
+                height: 56px;
+                bottom: 4px;
+                left: 50%;
+                margin-left: -26.5px;
+            }
+        }
+    }
+}
+
+.cancel {
+    background-color: #f0f0f0;
+    margin: 5px auto 40px;
+    padding: 5px 0;
+    @media screen and (min-width: $sm) {
+        margin: 10px auto 50px;
+    }
+    p {
+        @include font(13);
+        margin: 10px 0;
+        padding: 0 15px;
+        line-height: 1.8;
+        @media screen and (min-width: $sm) {
+            @include font(14);
+            line-height: 1.8;
+        }
+        &.ttl {
+            @include font(15);
+            color: #797979;
+            padding: 0 15px;
+            @media screen and (min-width: $sm) {
+                @include font(16);
+            }
+        }
+    }
+}
+
+.contract {
+    padding-bottom: 10px;
+    h4 {
+        width: 100%;
+        max-width: 1000px;
+        @include font(15);
+        line-height: 40px;
+        letter-spacing: 1px;
+        margin: 0 auto;
+        color: #fff;
+        background-color: #000;
+        @media screen and (min-width: $sm) {
+            @include font(16);
+            line-height: 50px;
+        }
+        span {
+            padding: 0 15px;
+        }
+    }
+    p {
+        @include font(13);
+        line-height: 1.8;
+        @media screen and (min-width: $sm) {
+            @include font(14);
+            line-height: 1.8;
+        }
+        span {
+            @media screen and (min-width: $sm) {
+                display: block;
+                padding: 0 15px;
+            }
+        }
+    }
+}
+
+.disclaimer {
+    background-color: #f0f0f0;
+    margin: 0 auto 50px;
+    padding: 15px 0;
+    width: 100%;
+    max-width: 1000px;
+    h5 {
+        color: #797979;
+        @include font(15);
+        letter-spacing: 1px;
+        margin: 0;
+        padding: 5px 15px 0 15px;
+        @media screen and (min-width: $sm) {
+            @include font(16);
+        }
+    }
+    p {
+        @include font(13);
+        line-height: 1.8;
+        margin: 5px 0 15px;
+        padding: 0 15px;
+        @media screen and (min-width: $sm) {
+            @include font(14);
+            line-height: 1.8;
+        }
+    }
+}

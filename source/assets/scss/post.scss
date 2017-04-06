@@ -26,8 +26,11 @@
         .now {
             max-width: 220px;
             margin: 0 auto 10px;
+            @media screen and (max-width: $md - 1) {
+                max-width: 190px;
+            }
             @media screen and (max-width: $sm - 1) {
-                max-width: 200px;
+                max-width: 150px;
             }
         }
         p {
@@ -39,6 +42,11 @@
                 @include font(15);
                 line-height: 1.8;
             }
+            @media screen and (max-width: $sm - 1) {
+                @include font(14);
+                line-height: 1.8;
+                margin: 15px 0;
+            }
         }
         .sub-ttl {
             @include font(20);
@@ -49,13 +57,47 @@
             @media screen and (max-width: $sm - 1) {
                 @include font(18);
             }
+            @media screen and (max-width: $sm - 1) {
+                @include font(16);
+            }
         }
         h2 {
             @include font(24);
             letter-spacing: 2px;
             margin: 0;
+            @media screen and (max-width: $md - 1) {
+                @include font(21);
+            }
             @media screen and (max-width: $sm - 1) {
-                @include font(22);
+                @include font(18);
+            }
+        }
+        .keyword {
+            li {
+                @include font(14);
+                margin: 0 5px;
+                padding: 0;
+                @media screen and (max-width: $md - 1) {
+                    @include font(13);
+                }
+                @media screen and (max-width: $sm - 1) {
+                    @include font(12);
+                    margin: 0 3px;
+                }
+                a {
+                    color: #fff;
+                    text-decoration: none;
+                    padding: 0 10px;
+                    line-height: 25px;
+                    @media screen and (max-width: $md - 1) {
+                        padding: 0 8px;
+                        line-height: 22px;
+                    }
+                    @media screen and (max-width: $sm - 1) {
+                        padding: 0 6px;
+                        line-height: 20px;
+                    }
+                }
             }
         }
     }
@@ -70,27 +112,75 @@
             background-color: #ededed;
             @include font(20);
             letter-spacing: 3px;
-            margin: 0;
+            text-indent: 3px;
+            margin: 0 0 30px;
+            @media screen and (max-width: $sm - 1) {
+                @include font(18);
+                margin-bottom: 20px;
+            }
         }
         h5 {
             @include font(20);
             color: #40708d;
             letter-spacing: 3px;
             margin: 0 0 15px;
+            @media screen and (max-width: $sm - 1) {
+                @include font(18);
+            }
         }
     }
     .cost {
-        p {
-            @include font(17);
-            letter-spacing: 1px;
-            margin: 10px 0;
-            @media screen and (max-width: $sm - 1) {
-                @include font(15);
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .wrap {
+            display: table;
+            margin: auto;
+            > li {
+                display: table-cell;
+                vertical-align: top;
             }
-            span {
-                @include font(24);
-                @media screen and (max-width: $sm - 1) {
-                    @include font(20);
+            .division {
+                margin: 0;
+                padding: 0 25px;
+                @include font(18);
+                line-height: 40px;
+                color: #fff;
+                background-color: #4191ad;
+                display: inline-block;
+            }
+            .price-area {
+                text-align: left;
+                .price {
+                    @include font(22);
+                    letter-spacing: 2px;
+                    text-indent: 2px;
+                    margin: 0;
+                    @media screen and (max-width: $sm - 1) {
+                        @include font(14);
+                    }
+                    span {
+                        @include font(34);
+                        line-height: 1;
+                        @media screen and (max-width: $sm - 1) {
+                            @include font(26);
+                        }
+                    }
+                }
+                .remarks {
+                    @include font(14);
+                    span {
+                        position: relative;
+                        padding-left: 1em;
+                        &:before {
+                            position: absolute;
+                            content: "※";
+                            top: 0;
+                            left: 0;
+                        }
+                    }
                 }
             }
         }
@@ -106,6 +196,9 @@
             border: solid 1px #40708d;
             margin: 30px 0;
             padding: 10px 45px 10px 20px;
+            @media screen and (max-width: $sm - 1) {
+                @include font(16);
+            }
             &:before {
                 position: absolute;
                 content: "";
@@ -121,6 +214,11 @@
                 top: 50%;
                 right: 20px;
                 margin-top: -3px;
+                @media screen and (max-width: $sm - 1) {
+                    width: 10px;
+                    height: 10px;
+                    margin-top: -2px;
+                }
             }
             &.active {
                 &:before {
@@ -138,6 +236,9 @@
                 @include font(20);
                 letter-spacing: 1px;
                 margin: 10px 0;
+                @media screen and (max-width: $sm - 1) {
+                    @include font(16);
+                }
             }
             p {
                 @include font(16);
@@ -146,18 +247,24 @@
                 text-align: left;
                 margin: 10px 0;
                 @media screen and (min-width: $sm) {
-                    text-align: center;
                     max-width: 675px;
                     margin: auto;
                 }
+                @media screen and (max-width: $sm - 1) {
+                    @include font(14);
+                }
             }
             img {
+                width: 100%;
                 max-width: 675px;
                 height: auto;
             }
         }
         .detail {
             padding: 0 0 30px;
+            @media screen and (max-width: $sm - 1) {
+                padding-bottom: 15px;
+            }
             .more {
                 margin: 1em;
                 a {
@@ -181,12 +288,18 @@
                 width: 38%;
                 padding: 10px;
                 letter-spacing: 1px;
+                @media screen and (max-width: $sm - 1) {
+                    @include font(13);
+                }
             }
             td {
                 @include font(16);
                 text-align: left;
                 padding: 10px 20px;
                 letter-spacing: 1px;
+                @media screen and (max-width: $sm - 1) {
+                    @include font(13);
+                }
             }
         }
     }
@@ -203,6 +316,9 @@
                 @include font(17);
                 color: #000;
                 letter-spacing: 2px;
+                @media screen and (max-width: $sm - 1) {
+                    @include font(14);
+                }
                 i {
                     font-size: 1.25em;
                 }
@@ -239,6 +355,9 @@
                 @include font(16);
                 line-height: 1.8;
                 letter-spacing: 1px;
+                @media screen and (max-width: $sm - 1) {
+                    @include font(14);
+                }
                 &:before {
                     position: absolute;
                     content: "・";
@@ -255,6 +374,10 @@
             line-height: 1.8;
             letter-spacing: 1px;
             margin: 0 0 10px;
+            @media screen and (max-width: $sm - 1) {
+                @include font(14);
+                line-height: 1.8;
+            }
         }
         table {
             width: 100%;
@@ -266,12 +389,18 @@
                 background-color: #ededed;
                 border: solid 1px #e3e2e2;
                 padding: 10px 5px;
+                @media screen and (max-width: $sm - 1) {
+                    @include font(14);
+                }
             }
             td {
                 @include font(16);
                 letter-spacing: 1px;
                 border: solid 1px #e3e2e2;
                 padding: 10px 5px;
+                @media screen and (max-width: $sm - 1) {
+                    @include font(14);
+                }
             }
         }
         ul {
@@ -286,6 +415,10 @@
                 @include font(16);
                 line-height: 1.8;
                 letter-spacing: 1px;
+                @media screen and (max-width: $sm - 1) {
+                    @include font(14);
+                    line-height: 1.8;
+                }
                 &:before {
                     position: absolute;
                     content: "※";
@@ -304,11 +437,16 @@
             margin: 0 0 10px;
             @media screen and (max-width: $sm - 1) {
                 letter-spacing: 1px;
+                @include font(14);
+                line-height: 1.8;
+            }
+            a {
+                color: #333;
             }
         }
         ul {
             list-style: none;
-            margin: 0;
+            margin: 0 0 10px;
             padding: 0;
             text-align: left;
             text-align: center;
@@ -318,6 +456,9 @@
                 padding-left: 1em;
                 letter-spacing: 1px;
                 display: inline-block;
+                @media screen and (max-width: $sm - 1) {
+                    @include font(14);
+                }
                 a {
                     position: relative;
                     padding-left: 1em;
@@ -332,6 +473,9 @@
                         border-color: transparent transparent transparent #4d4d4d;
                         top: 8px;
                         left: 0;
+                        @media screen and (max-width: $sm - 1) {
+                            border-width: 4px 0 4px 6.9px;
+                        }
                     }
                 }
             }
@@ -341,6 +485,72 @@
 
 .order-table-section {
     margin: 20px 0 0;
+    .course-select {
+        max-width: 675px;
+        margin: 0 auto;
+        cursor: pointer;
+        position: relative;
+        text-align: center;
+        box-sizing: border-box;
+        .label {
+            position: absolute;
+            width: 100%;
+            z-index: 1;
+            @include font(17);
+            line-height: 35px;
+            margin: 0;
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+            color: #fff;
+            background-color: #4191ad;
+            @media screen and (max-width: $sm - 1) {
+                @include font(16);
+                line-height: 30px;
+            }
+            span {
+                position: relative;
+                background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="32" height="24" viewBox="0 0 32 24"><polygon points="0,0 32,0 16,24" style="fill: rgb(255, 255, 255)"></polygon></svg>');
+                background-size: 9px 6px;
+                background-position: right 0 center;
+                background-repeat: no-repeat;
+                padding-right: 1.5em;
+            }
+        }
+        select {
+            cursor: pointer;
+            display: block;
+            width: 100%;
+            @include font(17);
+            padding: 0 1em;
+            color: #fff;
+            background-color: #fff;
+            line-height: 35px;
+            border: 1px solid #ddd;
+            border-radius: 0;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            // background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="32" height="24" viewBox="0 0 32 24"><polygon points="0,0 32,0 16,24" style="fill: rgb(51, 51, 51)"></polygon></svg>');
+            // background-size: 9px 6px;
+            // background-position: right 1em center;
+            // background-repeat: no-repeat;
+            position: relative;
+            z-index: 2;
+            opacity: 0;
+            @media screen and (max-width: $md - 1) {
+                @include font(16);
+                line-height: 30px;
+            }
+            @media screen and (max-width: $sm - 1) {
+                padding: 0 .5em;
+                background-position: right .5em center;
+            }
+            &:focus {
+                z-index: -1;
+                opacity: 1;
+            }
+        }
+    }
     .month-pager {
         padding: 5px;
         max-width: 675px;
@@ -414,6 +624,16 @@
             color: #ec5a24;
         }
     }
+    h4 {
+        @include font(18);
+        color: #40708d;
+        letter-spacing: 1px;
+        text-indent: 1px;
+        margin: 15px 0 0;
+        @media screen and (max-width: $sm - 1) {
+            @include font(16);
+        }
+    }
     .notes {
         width: 100%;
         max-width: 675px;
@@ -430,6 +650,9 @@
                 @include font(16);
                 color: #999;
                 text-align: left;
+                @media screen and (max-width: $sm - 1) {
+                    @include font(14);
+                }
                 &:before {
                     position: absolute;
                     top: 0;
@@ -451,6 +674,103 @@
     }
 }
 
+.recommend {
+    background-color: #f0f0eb;
+    margin-bottom: 50px;
+    padding: 40px 0;
+    @media screen and (max-width: $sm - 1) {
+        margin-bottom: 30px;
+        padding: 25px 0 10px;
+    }
+    h4 {
+        text-align: center;
+        margin: 0 0 30px;
+        @include font(20);
+        color: #40708d;
+        letter-spacing: 2px;
+        text-indent: 2px;
+        @media screen and (max-width: $sm - 1) {
+            @include font(18);
+            margin-bottom: 20px;
+        }
+    }
+    .wrap {
+        .item {
+            width: 30%;
+            float: left;
+            margin-left: calc(10% / 6);
+            margin-right: calc(10% / 6);
+            @media screen and (max-width: $md - 1) {
+                width: 48%;
+                margin: 0 1%;
+                &:last-child {
+                    display: none;
+                }
+            }
+            @media screen and (max-width: $sm - 1) {
+                width: 80%;
+                margin: 0 auto 30px;
+                float: none;
+                &:last-child {
+                    display: block;
+                }
+            }
+            .image {
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: cover;
+                &:before {
+                    content: "";
+                    display: block;
+                    padding-top: 65%;
+                }
+            }
+            .text {
+                h5 {
+                    @include font(15);
+                    margin: 10px 0 0;
+                }
+                p {
+                    @include font(13);
+                    margin: 10px 0;
+                }
+                .more {
+                    padding-top: 10px;
+                    a {
+                        display: block;
+                        color: #fff;
+                        background-color: #4191ad;
+                        text-align: center;
+                        padding: 10px 0;
+                        letter-spacing: 1px;
+                        text-decoration: none;
+                        font: normal 14px/160% "Sawarabi Mincho", sans-serif;
+                        font: normal 1.4rem/160% "Sawarabi Mincho", sans-serif;
+                        font-family: 'Sawarabi Gothic';
+                        transition: all .2s ease;
+                        border-radius: 3px;
+                        span {
+                            margin-right: 15px;
+                            position: relative;
+                            &:after {
+                                position: absolute;
+                                content: "";
+                                width: 0;
+                                height: 0;
+                                border-style: solid;
+                                border-width: 5px 0 5px 5px;
+                                border-color: transparent transparent transparent #fff;
+                                top: 6px;
+                                right: -13px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 .btn-entry {
     position: fixed;
     width: 100%;
@@ -466,6 +786,10 @@
         text-decoration: none;
         line-height: 50px;
         vertical-align: middle;
+        @media screen and (max-width: $sm - 1) {
+            @include font(17);
+            line-height: 40px;
+        }
         span {
             position: relative;
             margin-left: -20px;
@@ -484,6 +808,11 @@
                 top: 50%;
                 right: -20px;
                 margin-top: -6px;
+                @media screen and (max-width: $sm - 1) {
+                    width: 10px;
+                    height: 10px;
+                    margin-top: -5px;
+                }
             }
         }
         i {

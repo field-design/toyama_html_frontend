@@ -37,14 +37,20 @@ a {
     h1 {
         @include font(12);
         margin: 5px 10px;
+        @media screen and (max-width: $sm - 1) {
+            @include font(10);
+        }
     }
     .logo {
         text-align: center;
         margin: 15px auto 25px;
         max-width: 190px;
         height: auto;
+        @media screen and (max-width: $md - 1) {
+            max-width: 120px;
+        }
         @media screen and (max-width: $sm - 1) {
-            max-width: 130px;
+            max-width: 85px;
         }
     }
     .global-nav {
@@ -300,6 +306,9 @@ a {
                 cursor: pointer;
                 text-decoration: none;
                 @include hover;
+                @media screen and (max-width: $sm - 1) {
+                    padding: 5px 0;
+                }
                 i {
                     font-size: 2.1em;
                     vertical-align: middle;
@@ -491,29 +500,32 @@ a {
                         }
                     }
                 }
-                .keyword {
-                    font-size: 0;
-                    li {
-                        @include font(12);
-                        color: #fff;
-                        display: inline-block;
-                        margin-right: 5px;
-                        padding: 0 5px;
-                        @media screen and (max-width: $lg - 1) {
-                            @include font(15);
-                        }
-                        @media screen and (max-width: $md - 1) {
-                            @include font(12);
-                        }
-                        &.area {
-                            background-color: #d49488;
-                        }
-                        &.genre {
-                            background-color: #84b7a3;
-                        }
-                    }
-                }
             }
+        }
+    }
+}
+
+.keyword {
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+    li {
+        @include font(12);
+        color: #fff;
+        display: inline-block;
+        margin: 0 5px 5px 0;
+        padding: 0 5px;
+        @media screen and (max-width: $lg - 1) {
+            @include font(15);
+        }
+        @media screen and (max-width: $md - 1) {
+            @include font(12);
+        }
+        &.area {
+            background-color: #d49488;
+        }
+        &.genre {
+            background-color: #84b7a3;
         }
     }
 }
@@ -628,7 +640,10 @@ a {
                 }
             }
             td {
-                @include font(14);
+                @include font(13);
+                @media screen and (min-width: $sm) {
+                    @include font(14);
+                }
                 &:nth-child(1) {
                     a {
                         color: #333333;
@@ -641,10 +656,10 @@ a {
                     }
                 }
                 a {
-                    text-decoration: none;
+                    text-decoration: underline;
                     color: #666666;
                     &:hover {
-                        text-decoration: underline;
+                        text-decoration: none;
                     }
                 }
             }
@@ -657,6 +672,9 @@ a {
         margin: 5px 0 0;
         @media screen and (max-width: $sm - 1) {
             @include font(11);
+        }
+        a {
+            color: #666666;
         }
     }
 }
