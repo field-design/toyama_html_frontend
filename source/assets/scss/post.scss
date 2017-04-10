@@ -130,19 +130,11 @@
         }
     }
     .cost {
-        ul {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-        }
-        .wrap {
-            display: table;
+        table {
             margin: auto;
-            > li {
-                display: table-cell;
-                vertical-align: top;
-            }
-            .division {
+            max-width: 700px;
+            th {
+                min-width: 55px;
                 margin: 0;
                 padding: 0 25px;
                 @include font(18);
@@ -150,36 +142,56 @@
                 color: #fff;
                 background-color: #4191ad;
                 display: inline-block;
+                @media screen and (max-width: $sm - 1) {
+                    display: inline-block;
+                    @include font(16);
+                    line-height: 35px;
+                    padding: 0 20px;
+                }
             }
-            .price-area {
+            td {
                 text-align: left;
+                padding: 0 0 20px 25px;
+                max-width: 450px;
+                @media screen and (max-width: $sm - 1) {
+                    display: block;
+                    padding: 5px 0 25px;
+                }
+                > span {
+                    display: block;
+                }
                 .price {
                     @include font(22);
                     letter-spacing: 2px;
                     text-indent: 2px;
                     margin: 0;
                     @media screen and (max-width: $sm - 1) {
-                        @include font(14);
+                        @include font(18);
+                        text-align: center;
+                        padding-bottom: 5px;
                     }
                     span {
                         @include font(34);
                         line-height: 1;
                         @media screen and (max-width: $sm - 1) {
-                            @include font(26);
+                            @include font(30);
                         }
                     }
                 }
                 .remarks {
                     @include font(14);
-                    span {
-                        position: relative;
-                        padding-left: 1em;
-                        &:before {
-                            position: absolute;
-                            content: "※";
-                            top: 0;
-                            left: 0;
-                        }
+                    position: relative;
+                    padding-left: 1em;
+                    @media screen and (max-width: $sm - 1) {
+                        @include font(13);
+                        max-width: 250px;
+                        margin: auto;
+                    }
+                    &:before {
+                        position: absolute;
+                        content: "※";
+                        top: 0;
+                        left: 0;
                     }
                 }
             }
@@ -744,9 +756,7 @@
                         padding: 10px 0;
                         letter-spacing: 1px;
                         text-decoration: none;
-                        font: normal 14px/160% "Sawarabi Mincho", sans-serif;
-                        font: normal 1.4rem/160% "Sawarabi Mincho", sans-serif;
-                        font-family: 'Sawarabi Gothic';
+                        @include font(14);
                         transition: all .2s ease;
                         border-radius: 3px;
                         span {

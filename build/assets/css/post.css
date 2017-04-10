@@ -1070,23 +1070,13 @@ img {
   }
 }
 
-.overview .cost ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.overview .cost .wrap {
-  display: table;
+.overview .cost table {
   margin: auto;
+  max-width: 700px;
 }
 
-.overview .cost .wrap > li {
-  display: table-cell;
-  vertical-align: top;
-}
-
-.overview .cost .wrap .division {
+.overview .cost table th {
+  min-width: 55px;
   margin: 0;
   padding: 0 25px;
   font: 400 18px/160% "Noto Sans Japanese", sans-serif;
@@ -1097,11 +1087,34 @@ img {
   display: inline-block;
 }
 
-.overview .cost .wrap .price-area {
-  text-align: left;
+@media screen and (max-width: 479px) {
+  .overview .cost table th {
+    display: inline-block;
+    font: 400 16px/160% "Noto Sans Japanese", sans-serif;
+    font: 400 1.6rem/160% "Noto Sans Japanese", sans-serif;
+    line-height: 35px;
+    padding: 0 20px;
+  }
 }
 
-.overview .cost .wrap .price-area .price {
+.overview .cost table td {
+  text-align: left;
+  padding: 0 0 20px 25px;
+  max-width: 450px;
+}
+
+@media screen and (max-width: 479px) {
+  .overview .cost table td {
+    display: block;
+    padding: 5px 0 25px;
+  }
+}
+
+.overview .cost table td > span {
+  display: block;
+}
+
+.overview .cost table td .price {
   font: 400 22px/160% "Noto Sans Japanese", sans-serif;
   font: 400 2.2rem/160% "Noto Sans Japanese", sans-serif;
   letter-spacing: 2px;
@@ -1110,36 +1123,44 @@ img {
 }
 
 @media screen and (max-width: 479px) {
-  .overview .cost .wrap .price-area .price {
-    font: 400 14px/160% "Noto Sans Japanese", sans-serif;
-    font: 400 1.4rem/160% "Noto Sans Japanese", sans-serif;
+  .overview .cost table td .price {
+    font: 400 18px/160% "Noto Sans Japanese", sans-serif;
+    font: 400 1.8rem/160% "Noto Sans Japanese", sans-serif;
+    text-align: center;
+    padding-bottom: 5px;
   }
 }
 
-.overview .cost .wrap .price-area .price span {
+.overview .cost table td .price span {
   font: 400 34px/160% "Noto Sans Japanese", sans-serif;
   font: 400 3.4rem/160% "Noto Sans Japanese", sans-serif;
   line-height: 1;
 }
 
 @media screen and (max-width: 479px) {
-  .overview .cost .wrap .price-area .price span {
-    font: 400 26px/160% "Noto Sans Japanese", sans-serif;
-    font: 400 2.6rem/160% "Noto Sans Japanese", sans-serif;
+  .overview .cost table td .price span {
+    font: 400 30px/160% "Noto Sans Japanese", sans-serif;
+    font: 400 3rem/160% "Noto Sans Japanese", sans-serif;
   }
 }
 
-.overview .cost .wrap .price-area .remarks {
+.overview .cost table td .remarks {
   font: 400 14px/160% "Noto Sans Japanese", sans-serif;
   font: 400 1.4rem/160% "Noto Sans Japanese", sans-serif;
-}
-
-.overview .cost .wrap .price-area .remarks span {
   position: relative;
   padding-left: 1em;
 }
 
-.overview .cost .wrap .price-area .remarks span:before {
+@media screen and (max-width: 479px) {
+  .overview .cost table td .remarks {
+    font: 400 13px/160% "Noto Sans Japanese", sans-serif;
+    font: 400 1.3rem/160% "Noto Sans Japanese", sans-serif;
+    max-width: 250px;
+    margin: auto;
+  }
+}
+
+.overview .cost table td .remarks:before {
   position: absolute;
   content: "※";
   top: 0;
@@ -1929,9 +1950,8 @@ img {
   padding: 10px 0;
   letter-spacing: 1px;
   text-decoration: none;
-  font: normal 14px/160% "Sawarabi Mincho", sans-serif;
-  font: normal 1.4rem/160% "Sawarabi Mincho", sans-serif;
-  font-family: 'Sawarabi Gothic';
+  font: 400 14px/160% "Noto Sans Japanese", sans-serif;
+  font: 400 1.4rem/160% "Noto Sans Japanese", sans-serif;
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
   border-radius: 3px;
