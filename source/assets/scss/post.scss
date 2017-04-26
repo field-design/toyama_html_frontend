@@ -130,6 +130,20 @@
         }
     }
     .cost {
+        .cost-group {
+            margin: auto;
+            max-width: 540px;
+            h4 {
+                margin-bottom: 0;
+                @include font(18);
+                text-align: left;
+            }
+            p {
+                margin-top: .5em;
+                @include font(16);
+                text-align: left;
+            }
+        }
         table {
             margin: auto;
             max-width: 700px;
@@ -561,6 +575,22 @@
                 z-index: -1;
                 opacity: 1;
             }
+        }
+    }
+    .pre {
+        position: relative;
+        width: 100%;
+        max-width: 675px;
+        margin: auto;
+        &:before {
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            content: "";
+            background-color: rgba(0,0,0,.5);
         }
     }
     .month-pager {

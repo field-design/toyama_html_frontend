@@ -1026,7 +1026,7 @@ h2 span {
   border: 1px solid #dbdbdb;
   border-width: 0 0 1px;
   padding: .5em .75em;
-  vertical-align: top;
+  vertical-align: middle;
 }
 
 .order-table thead th,

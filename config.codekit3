@@ -334,7 +334,7 @@
 		"oAP": "\/build\/assets\/img\/index\/slide01.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/source\/assets\/img\/index\/slide02.jpg": {
@@ -344,7 +344,7 @@
 		"oAP": "\/build\/assets\/img\/index\/slide02.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/source\/assets\/img\/index\/slide03.jpg": {
@@ -354,7 +354,7 @@
 		"oAP": "\/build\/assets\/img\/index\/slide03.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/source\/assets\/img\/index\/sub_ttl.svg": {
@@ -414,7 +414,7 @@
 		"oAP": "\/build\/assets\/img\/niikawa\/slide02.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/source\/assets\/img\/niikawa\/slide03.jpg": {
@@ -424,7 +424,7 @@
 		"oAP": "\/build\/assets\/img\/niikawa\/slide03.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/source\/assets\/img\/post\/icon_ask.png": {
@@ -434,7 +434,7 @@
 		"oAP": "\/build\/assets\/img\/post\/icon_ask.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -445,7 +445,7 @@
 		"oAP": "\/build\/assets\/img\/post\/icon_few.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -456,7 +456,7 @@
 		"oAP": "\/build\/assets\/img\/post\/icon_many.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -467,7 +467,7 @@
 		"oAP": "\/build\/assets\/img\/post\/icon_not.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -478,7 +478,7 @@
 		"oAP": "\/build\/assets\/img\/post\/icon_out.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -519,7 +519,7 @@
 		"oAP": "\/build\/assets\/img\/sample\/detail01.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/source\/assets\/img\/sample\/detail02.jpg": {
@@ -529,7 +529,7 @@
 		"oAP": "\/build\/assets\/img\/sample\/detail02.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/source\/assets\/img\/sample\/detail03.jpg": {
@@ -539,7 +539,7 @@
 		"oAP": "\/build\/assets\/img\/sample\/detail03.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/source\/assets\/img\/sample\/logo01.png": {
@@ -549,7 +549,7 @@
 		"oAP": "\/build\/assets\/img\/sample\/logo01.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -560,7 +560,7 @@
 		"oAP": "\/build\/assets\/img\/sample\/slide01.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/source\/assets\/img\/sample\/slide02.jpg": {
@@ -570,7 +570,7 @@
 		"oAP": "\/build\/assets\/img\/sample\/slide02.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/source\/assets\/img\/sample\/slide03.jpg": {
@@ -580,7 +580,7 @@
 		"oAP": "\/build\/assets\/img\/sample\/slide03.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/source\/assets\/img\/sample\/thum.jpg": {
