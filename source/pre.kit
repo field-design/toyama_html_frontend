@@ -1,0 +1,152 @@
+<!-- @import '/source/kit/settings' -->
+<!-- $page_title = ページタイトル -->
+<!-- $description = ディスクリプション -->
+<!-- $keyword = キーワード,キーワード,キーワード -->
+<!-- $page_slug = index -->
+<!DOCTYPE html>
+<html lang="ja">
+<!-- @import '/source/kit/head' -->
+<body class="drawer drawer--right" id="top">
+<!-- @import '/source/kit/gtm' -->
+
+<!-- @import '/source/kit/preloading' -->
+
+<!-- @import '/source/kit/global-header-index' -->
+
+
+
+<!-- START main -->
+<main role="main">
+
+<div class="mainvisual">
+    <div class="bxslider">
+        <div class="slide" style="background-image: url(/assets/img/index/slide01.jpg);"></div>
+        <div class="slide" style="background-image: url(/assets/img/index/slide02.jpg);"></div>
+        <div class="slide" style="background-image: url(/assets/img/index/slide03.jpg);"></div>
+    </div>
+    <p>いますぐ えらべる<br>いますぐ とらべる</p>
+</div>
+
+<div class="maintenance" data-lg>
+    <div class="intro">
+        <h3>ただいまメンテナンス中です</h3>
+        <p>
+            ただいまシステムメンテナンス中のため、サービスを一時停止しております。<br />
+            メンテナンス終了まで、いましばらくお待ちください。<br />
+            お客さまにはご不便をおかけいたしますが、何卒ご理解いただきますようお願い申し上げます。
+        </p>
+    </div>
+
+    <div class="detail">
+        <h4>メンテナンス日時</h4>
+        <p>
+            2017年5月9日 17:00 〜 2017年5月10日 12:00<br />
+            ※メンテナンス終了の時間が前後することがありますのでご了承ください。
+        </p>
+    </div>
+</div>
+<style media="screen">
+    .maintenance {
+      padding: 30px 0 60px;
+    }
+
+    .maintenance .intro {
+      margin-bottom: 30px;
+    }
+
+    .maintenance .intro h3 {
+      padding-bottom: .5em;
+      font: 400 20px/160% "Noto Sans Japanese", sans-serif;
+      font: 400 2rem/160% "Noto Sans Japanese", sans-serif;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .maintenance .intro p {
+      font: 400 14px/160% "Noto Sans Japanese", sans-serif;
+      font: 400 1.4rem/160% "Noto Sans Japanese", sans-serif;
+    }
+
+    .maintenance .detail {
+      padding: .5em 1em;
+      border: 1px dashed #eee;
+    }
+
+    .maintenance .detail h4 {
+      margin: .25em 0;
+      font: 400 16px/160% "Noto Sans Japanese", sans-serif;
+      font: 400 1.6rem/160% "Noto Sans Japanese", sans-serif;
+    }
+
+    .maintenance .detail p {
+      margin-top: 0;
+      font: 400 14px/160% "Noto Sans Japanese", sans-serif;
+      font: 400 1.4rem/160% "Noto Sans Japanese", sans-serif;
+    }
+</style>
+
+</main>
+<!-- END main -->
+
+
+<!-- @import '/source/kit/global-footer-index' -->
+
+<!-- @import '/source/kit/fonts' -->
+
+<!-- @import '/source/kit/commonscript' -->
+
+<!-- @import '/source/kit/gmap' -->
+
+<!-- Page Script -->
+
+<link rel="stylesheet" href="/assets/css/jquery.bxslider.min.css">
+<script src="/assets/js/jquery.bxslider.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+        var sliderImg = $('.bxslider .slide').length;
+        if(sliderImg > 1){
+            $('.bxslider').bxSlider({
+                mode: 'fade',
+                auto: true,
+                speed: 2000,
+                pause: 6000,
+                // pager: false,
+                controls: false,
+                adaptiveHeight: true,
+                adaptiveHeightSpeed: 0,
+                touchEnabled: false,
+            });
+        }
+    });
+</script>
+<script>
+    $(function(){
+        $(".choice .area").on("click", function() {
+            if ($(".area-accordion").css('display') == 'none'){
+                $(".area-accordion").slideDown();
+                $(".choice .area").addClass("active");
+                $(".choice .genre").removeClass("active");
+                $(".genre-accordion").slideUp();
+            } else {
+                $(".area-accordion").slideUp();
+                $(".choice .area").removeClass("active");
+            }
+        });
+    });
+    $(function(){
+        $(".choice .genre").on("click", function() {
+            if ($(".genre-accordion").css('display') == 'none'){
+                $(".genre-accordion").slideDown();
+                $(".choice .genre").addClass("active");
+                $(".choice .area").removeClass("active");
+                $(".area-accordion").slideUp();
+            } else {
+                $(".genre-accordion").slideUp();
+                $(".choice .genre").removeClass("active");
+            }
+        });
+    });
+</script>
+
+<!-- @import '/source/kit/end' -->
+</body>
+</html>
