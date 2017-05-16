@@ -764,6 +764,19 @@
 		"oS": 1,
 		"uL": 1
 		},
+	"\/source\/assets\/scss\/law.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "\/build\/assets\/css\/law.css",
+		"oF": 0,
+		"oS": 1,
+		"uL": 1
+		},
 	"\/source\/assets\/scss\/list.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -915,6 +928,12 @@
 		"ft": 2048,
 		"oA": 1,
 		"oAP": "\/build\/kit\/_share.html",
+		"oF": 0
+		},
+	"\/source\/law\/index.kit": {
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/build\/law\/index.html",
 		"oF": 0
 		},
 	"\/source\/list\/index.kit": {
