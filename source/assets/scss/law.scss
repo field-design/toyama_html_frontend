@@ -18,21 +18,23 @@ h2 {
 
 .law-table {
     margin: 0 0 100px;
-    background-color: #f0f0f0;
     table {
         width: 100%;
         margin: auto;
         border-collapse: collapse;
         tbody {
             tr {
+                border-top: 1px solid #ddd;
+                border-bottom: 1px solid #ddd;
                 th,
                 td {
                     padding: .75em 1em;
                     @include font(14);
                     text-align: left;
                 }
-                &:not(:last-child) {
-                    border-bottom: 1px solid #ddd;
+                th {
+                    background-color: #f0f0f0;
+
                 }
                 @include max-md {
                     th,
@@ -40,12 +42,12 @@ h2 {
                         display: block;
                     }
                     th {
-                        padding: .75em 1em 0;
+                        padding: .25em 1em;
                         @include font(16);
                         color: #666;
                     }
                     td {
-
+                        margin-bottom: 1.5em;
                     }
                 };
             }
