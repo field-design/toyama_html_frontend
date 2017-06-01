@@ -224,6 +224,17 @@ a {
                     padding: 0 15px 5px;
                 }
             }
+            .translate {
+                padding: 0 15px;
+                >div {
+                    display: inline-block;
+                    a {
+                        padding: 2px 5px;
+                        @include font(12);
+                        border: 1px solid white;
+                    }
+                }
+            }
         }
         .drawer-hamburger-icon, .drawer-hamburger-icon:after, .drawer-hamburger-icon:before {
             height: 5.5px;
