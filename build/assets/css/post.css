@@ -986,7 +986,7 @@ img {
 .overview .title .keyword li {
   font: 400 14px/160% "Noto Sans Japanese", sans-serif;
   font: 400 1.4rem/160% "Noto Sans Japanese", sans-serif;
-  margin: 0 5px;
+  margin: 3px 5px;
   padding: 0;
 }
 
@@ -1001,7 +1001,7 @@ img {
   .overview .title .keyword li {
     font: 400 12px/160% "Noto Sans Japanese", sans-serif;
     font: 400 1.2rem/160% "Noto Sans Japanese", sans-serif;
-    margin: 0 3px;
+    margin: 3px;
   }
 }
 
@@ -1214,9 +1214,11 @@ img {
   border: 0px;
   border-top: solid 1px #416f8e;
   border-right: solid 1px #416f8e;
-  -ms-transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+  -webkit-transition: all .2s ease;
+  -o-transition: all .2s ease;
   transition: all .2s ease;
   top: 50%;
   right: 20px;
@@ -1232,9 +1234,11 @@ img {
 }
 
 .overview .details .btn-hide.active:before {
-  -ms-transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
-  transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+      transform: rotate(135deg);
+  -webkit-transition: all .2s ease;
+  -o-transition: all .2s ease;
   transition: all .2s ease;
   margin-top: -8px;
 }
@@ -1601,35 +1605,50 @@ img {
 
 .order-table-section .course-select {
   max-width: 675px;
-  margin: 0 auto;
+  margin: 0 auto 35px;
   cursor: pointer;
   position: relative;
   text-align: center;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
+.order-table-section .course-select:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 15px 22px 0 22px;
+  border-color: #4190ad transparent transparent transparent;
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  margin-left: -22px;
+}
+
 .order-table-section .course-select .label {
+  position: absolute;
   width: 100%;
   z-index: 1;
   font: 400 17px/160% "Noto Sans Japanese", sans-serif;
   font: 400 1.7rem/160% "Noto Sans Japanese", sans-serif;
   line-height: 35px;
   margin: 0;
+  border: 1px solid #ddd;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   color: #fff;
   background-color: #4191ad;
+  border-bottom: solid 4px #316880;
+  border-radius: 3px;
+  -webkit-box-shadow: 2px 2px 2px #555;
+  box-shadow: 2px 2px 2px #555;
 }
 
 @media screen and (max-width: 479px) {
   .order-table-section .course-select .label {
     font: 400 16px/160% "Noto Sans Japanese", sans-serif;
     font: 400 1.6rem/160% "Noto Sans Japanese", sans-serif;
-    line-height: 30px;
-  }
-}
-
-@media screen and (max-width: 479px) {
-  .order-table-section .course-select .label {
     line-height: 30px;
   }
 }
@@ -1649,11 +1668,11 @@ img {
   width: 100%;
   font: 400 17px/160% "Noto Sans Japanese", sans-serif;
   font: 400 1.7rem/160% "Noto Sans Japanese", sans-serif;
-  margin-top: -35px;
   padding: 0 1em;
-  color: #000;
+  color: #fff;
   background-color: #fff;
-  height: 35px;
+  line-height: 35px;
+  border: 1px solid #ddd;
   border-radius: 0;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -1667,6 +1686,7 @@ img {
   .order-table-section .course-select select {
     font: 400 16px/160% "Noto Sans Japanese", sans-serif;
     font: 400 1.6rem/160% "Noto Sans Japanese", sans-serif;
+    line-height: 30px;
   }
 }
 
@@ -1674,14 +1694,16 @@ img {
   .order-table-section .course-select select {
     padding: 0 .5em;
     background-position: right .5em center;
-    height: 30px;
-    margin-top: -30px;
   }
 }
 
 .order-table-section .course-select select:focus {
   z-index: -1;
   opacity: 1;
+}
+
+.order-table-section .course-select select:hover {
+  opacity: .3;
 }
 
 .order-table-section .pre {
@@ -1702,11 +1724,30 @@ img {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+.order-table-section .pre:after {
+  position: absolute;
+  z-index: 1;
+  top: 35%;
+  left: 20%;
+  content: "①コースを選択してください\A②日程を選択してください";
+  white-space: pre;
+  color: white;
+  font-size: 300%;
+  line-height: 240%;
+}
+
+@media screen and (max-width: 767px) {
+  .order-table-section .pre:after {
+    font-size: 200%;
+  }
+}
+
 .order-table-section .month-pager {
   padding: 5px;
   max-width: 675px;
   margin: auto;
   background-color: #ededed;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font: 400 16px/160% "Noto Sans Japanese", sans-serif;
   font: 400 1.6rem/160% "Noto Sans Japanese", sans-serif;
@@ -1739,6 +1780,7 @@ img {
   max-width: 675px;
   margin: auto;
   border-collapse: collapse;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -1895,10 +1937,6 @@ img {
   background-image: url(../img/post/icon_ask.png);
 }
 
-.order-table-section.en .notes li {
-  display: block;
-}
-
 .recommend {
   background-color: #f0f0eb;
   margin-bottom: 50px;
@@ -1996,6 +2034,8 @@ img {
   text-decoration: none;
   font: 400 14px/160% "Noto Sans Japanese", sans-serif;
   font: 400 1.4rem/160% "Noto Sans Japanese", sans-serif;
+  -webkit-transition: all .2s ease;
+  -o-transition: all .2s ease;
   transition: all .2s ease;
   border-radius: 3px;
 }
@@ -2058,9 +2098,11 @@ img {
   border: 0px;
   border-top: solid 1px #fff;
   border-right: solid 1px #fff;
-  -ms-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+  -webkit-transition: all .2s ease;
+  -o-transition: all .2s ease;
   transition: all .2s ease;
   top: 50%;
   right: -20px;
